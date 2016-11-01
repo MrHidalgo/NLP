@@ -1,0 +1,30 @@
+////
+/// @group  Variable
+////
+
+///
+/// @name   object
+///
+
+$object : (
+    color : (
+        white             : #fff,
+        black             : #000,
+				outrageousOrange	: #f15922,
+				smalt							: #102a83,
+				whisper						: #EDE8E7,
+				nero							: #222,
+				martini						: #A4A2A1,
+				sauvignon					: #EBE8E7,
+				iron							: #C6C7C7
+    ),
+
+		fonts : (
+			jura        : 'Jura',
+			openSans   	: 'Open Sans',
+    ),
+
+    dimension : (
+        all       : 100%
+    ),
+);

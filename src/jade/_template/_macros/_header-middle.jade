@@ -1,0 +1,53 @@
+
+.header-middle
+    .container.clearfix
+        .header-middle__left
+            .phone
+                a(href="javascript:void(0);", class="btn btn-phone")
+                    i.btn-phone__icon-phone
+                    span!= '(068) 780-08-08'
+                    i.btn-phone__icon-arrow
+                ul.phone-list
+                    - for(var i = 0; i < 5; i++)
+                        li.phone-list__item
+                            a(href="javascript:void(0);", class="phone-list__btn")!= "(068) 780-08-08"
+
+            .logotype
+                img(src="./img/logo.png", alt="logotype", title="logotype")
+
+
+        .header-middle__center
+            .nav
+                ul.nav__list
+                    - for(var i = 0, navLen = nav.header__middle__nav.length; i < navLen; i++)
+                        li.nav__item
+                            a(href="javascript:void(0);", class="nav__btn")!= nav.header__middle__nav[i]
+                        if(i != navLen - 1)
+                            span.nav__line!= '/'
+
+            .search
+                input(type="text", class="search__input", placeholder="Что вы хотите купить?")
+                a(href="javascript:void(0);", class="search__btn")!= "Поиск"
+
+
+        .header-middle__right
+            .login
+                a(href="javascript:void(0);", class="login__log")!= "Войти"
+                span.login__text!= "или"
+                a(href="javascript:void(0);", class="login__sign")!= "Зарегестрироваться"
+
+            .basket
+                .cart
+                    .cart__wrap
+                        i.cart__wrap-icon
+                        span.cart__wrap-text!= "3"
+                    .cart__info
+                        span.cart__info-text!= "Товаров: <span class='cart__info-text-val'>3</span>"
+                        span.cart__info-sum!= "(700 грн.)"
+
+                a(href="javascript:void(0);", class="basket__diff")
+                    i.basket__diff-icon
+                    span.basket__diff-text!= "Сравнение"
+                a(href="javascript:void(0);", class="basket__track")
+                    i.basket__track-icon
+                    span.basket__track-text!= "Отследить заказ"

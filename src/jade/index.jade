@@ -1,0 +1,48 @@
+include _mixin/mixin
+
+doctype html
+html
+
+    +headSite('Sport Factor', data.styleLink, data.fontLink)
+
+    body
+
+        //- HEADER [top, middle, bottom]
+        block header
+            include ./_template/_header
+
+        //- SLIDER
+        block slider
+            include ./_template/_slider
+
+        //- ADVANTAGES
+        block advantages
+            include ./_template/_advantages
+
+        //- PRODUCT
+        block product
+            include ./_template/_product
+
+        //- PARTNER
+        block partner
+            include ./_template/_partner
+
+        //- VIDEO
+        block video
+            include ./_template/_video
+
+        //- NEWS
+        block news
+            include ./_template/_news
+
+        //- DESCRIPTION
+        block description
+            include ./_template/_description
+
+        //- FOOTER
+        block footer
+            include ./_template/_footer
+
+
+        - for(var i = 0; i < data.scriptLink.length; i++)
+            script(src= data.scriptLink[i])
