@@ -61,9 +61,11 @@ $f-V_regular		: return-value(fonts, V_regular);
 		position: absolute;
 		top: 50%;
 		left: 50%;
+		width: 400px;
 		transform: translate(-50%, -50%);
 		@include respond-to("small-all") {
 			position: static;
+			width: auto;
 			transform: initial;
 		}
 	}
