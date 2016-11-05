@@ -15,7 +15,6 @@ var command = {
 	buildImg        :   'compress:img',
 
 	sprites         :   'sprite',
-	spritesRetina   :   'sprite.r',
 
 	removeComment   :   'remove:comment',
 

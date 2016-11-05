@@ -1,15 +1,5 @@
 {
-  "styleLink" : [
-    "./css/common.min.css"
-  ],
-
   "fontLink" : [
-    "https://fonts.googleapis.com/css?family=Jura:300,400,500,600",
-    "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"
-  ],
-
-  "scriptLink" : [
-    "./script/jquery-1.11.1.min.js",
-    "./script/script.js"
+    "./css/fonts.min.css"
   ]
 }

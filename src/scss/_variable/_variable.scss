@@ -6,25 +6,49 @@
 /// @name   object
 ///
 
+/// FS --> Fira Sans
+/// V	 --> Verdana
+
 $object : (
-    color : (
-        white             : #fff,
-        black             : #000,
-				outrageousOrange	: #f15922,
-				smalt							: #102a83,
-				whisper						: #EDE8E7,
-				nero							: #222,
-				martini						: #A4A2A1,
-				sauvignon					: #EBE8E7,
-				iron							: #C6C7C7
-    ),
+	color : (
+		white             : #fff,
+		black             : #000,
+		mediumSeaGreen		: #2ECC71,
+		irisBlue					: #1BBBD7,
+		viking						: #59A9C2,
+		silverTree				: #66CC99,
+		cinnabar					: #E74C3C,
+		grey							: #888,
+		nightRider				: #323232,
+		regentStBlue			: #A7C5CF,
+		pinkSwan					: #B8B8B8,
+		aliceBlue					: #F3F5F7,
+		whisper						: #EEE,
+		shuttleGrey				: #58697A
+	),
 
-		fonts : (
-			jura        : 'Jura',
-			openSans   	: 'Open Sans',
-    ),
+	fonts : (
+		FS_extraLight				: 'Fira Sans ExtraLight',
+		FS_extraLightItalic	: 'Fira Sans ExtraLight Italic',
+		FS_light						: 'Fira Sans Light',
+		FS_lightItalic			: 'Fira Sans Light Italic',
+		FS_book							: 'Fira Sans Book',
+		FS_bookItalic				: 'Fira Sans Book Italic',
+		FS_regular					: 'Fira Sans Regular',
+		FS_italic						: 'Fira Sans Italic',
+		FS_medium						: 'Fira Sans Medium',
+		FS_mediumItalic			: 'Fira Sans Medium Italic',
+		FS_semiBold					: 'Fira Sans SemiBold',
+		FS_semiBoldItalic		: 'Fira Sans SemiBold Italic',
+		FS_bold							: 'Fira Sans Bold',
+		FS_boldItalic				: 'Fira Sans Bold Italic',
+		V_boldItalic				: 'Verdana Bold Italic',
+		V_bold							: 'Verdana Bold',
+		V_italic						: 'Verdana Italic',
+		V_regular						: 'Verdana',
+	),
 
-    dimension : (
-        all       : 100%
-    ),
+	dimension : (
+		all       : 100%
+	),
 );

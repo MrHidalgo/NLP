@@ -1,0 +1,52 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+///
+///	SPRITE
+///
+@import "../../_variable/sprite_NLP";
+///
+/// VARIABLE
+///
+$c-cinnabar	: return-value(color, cinnabar);
+
+
+
+///
+/// MAIN
+///
+.logotype {
+	@include mixinDimensions(140px);
+	line-height: 140px;
+	background-color: $c-cinnabar;
+	box-shadow: 0 2px 20px 0 rgba(0,0,0,0.1);
+	text-align: center;
+
+
+	&__icon,
+	&__icon-retina {
+		display: inline-block;
+		vertical-align: middle;
+		@include mixinDimensions(80px, auto);
+	}
+
+
+	&__icon-retina {
+		display: none;
+	}
+}
+
+/// RETINA
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+	.logotype {
+		&__icon {
+			display: none;
+		}
+		&__icon-retina {
+			display: inline-block;
+		}
+	}
+}

@@ -4,20 +4,14 @@
 @import "_mixin/mixin";
 @import "_function/function";
 ///
+///	SPRITE
+///
+@import "_variable/sprite_NLP";
+///
 /// IMPORT TEMPLATE
 ///
 @import "_template/_grid";
 @import "_template/_base";
-
-@import "_template/header";
-@import "_template/slider";
-@import "_template/advantages";
-@import "_template/product";
-@import "_template/partner";
-@import "_template/video";
-@import "_template/news";
-@import "_template/description";
-@import "_template/footer";
 
 
 ///
@@ -26,8 +20,9 @@
 $w-all              : return-value(dimension, all);
 
 $c-white            : return-value(color, white);
+$c-aliceBlue        : return-value(color, aliceBlue);
 
-$f-jura							: return-value(fonts, jura);
+$f-FS_regular				: return-value(fonts, FS_regular);
 
 
 
@@ -57,7 +52,9 @@ body{
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	background-color: $c-white;
+	font-family: $f-FS_regular;
+
+	background: $c-aliceBlue url("../img/img-bg.png") repeat top right;
 }
 
 * {
@@ -99,33 +96,4 @@ a{
 
 input{
 	outline: none;
-}
-
-
-.clearfix:before, .clearfix:after {
-	content: "\0020";
-	display: block;
-	height: 0;
-	visibility: hidden;
-}
-
-.clearfix:after {
-	clear: both;
-}
-
-.clearfix {
-	zoom: 1;
-}
-
-.img-responsive {
-	display: block;
-	max-width: $w-all;
-	height: auto;
-}
-
-.aligner {
-	display: inline-block;  *display: inline;  *zoom: 1;
-	height: 100%;
-	margin-right: -.3em;
-	vertical-align: middle;
 }

@@ -1,0 +1,16 @@
+
+.modal
+    .modal__row
+
+        h1.modal__title!= "Введите секретный код"
+
+        p.modal__sub-title!= "Который позволит войти на наш ресурс"
+
+        input(type="text", class="modal__input", name="secret_code" value="", autofocus="true")
+
+        .modal__btn-wrap
+            i.modal__icon
+            a(href="javascript:void(0);", class="modal__btn-accept")!= "Подтверждаю"
+
+        a(href="javascript:void(0);", class="modal__btn-info")
+            | Возникли трудности?
