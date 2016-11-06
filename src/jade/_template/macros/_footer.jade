@@ -1,0 +1,24 @@
+
+.footer
+
+    .row-0
+
+        .link
+            a(href="javascript:void(0);", class="link__btn link__btn-0")!= "Обратная связь"
+            span.link__line
+            a(href="javascript:void(0);", class="link__btn link__btn-1")!= "Вторая ссылка"
+
+        .social
+            ul.socil__list
+                - for(var i = 0; i < 2; i++)
+                    li.social__item
+                        a(href="javascript:void(0);", class="social__btn social__btn-" + i)
+                            i.social__icon
+
+    hr
+
+    .row-1
+
+        p.copyright!= "&copy; 2007-2016. «NLP-HUB» Все права защищены."
+
+        a(href="javascript:void(0);", class="btn-privacy")!= "Пользовательское соглашение"

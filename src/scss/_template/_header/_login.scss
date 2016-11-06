@@ -13,9 +13,7 @@ $f-FS_bold			: return-value(fonts, FS_bold);
 
 
 .login {
-	position: absolute;
-	right: 100px;
-	top: 0;
+	float: right;
 
 
 	&__btn-sign,

@@ -72,7 +72,6 @@
 
 .logo {
   display: inline-block;
-  margin-left: 100px;
 }
 
 
@@ -136,7 +135,7 @@
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -209px;
+  background-position: 0px -234px;
   width: 26px;
   height: 26px;
 }
@@ -145,14 +144,14 @@
   
   .nav__btn-training .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 28px 235px;
+    background-size: 28px 277px;
   }
 }
 
 
 .nav__btn-training:hover .nav__icon {
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -178px;
+  background-position: 0px -203px;
   width: 26px;
   height: 26px;
 }
@@ -161,7 +160,7 @@
   
   .nav__btn-training:hover .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 28px 235px;
+    background-size: 28px 277px;
   }
 }
 
@@ -182,7 +181,7 @@
   
   .nav__btn-community .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 28px 235px;
+    background-size: 28px 277px;
   }
 }
 
@@ -198,7 +197,7 @@
   
   .nav__btn-community:hover .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 28px 235px;
+    background-size: 28px 277px;
   }
 }
 
@@ -219,7 +218,7 @@
   
   .nav__btn-diary .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 28px 235px;
+    background-size: 28px 277px;
   }
 }
 
@@ -235,15 +234,13 @@
   
   .nav__btn-diary:hover .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 28px 235px;
+    background-size: 28px 277px;
   }
 }
 
 
 .login {
-  position: absolute;
-  right: 100px;
-  top: 0;
+  float: right;
 }
 
 
@@ -284,8 +281,175 @@
   width: 100%;
   min-height: 100px;
   line-height: 100px;
+  padding: 0 100px;
   background-color: #E74C3C;
   box-shadow: 0 2px 3px 0 rgba(71, 71, 71, 0.4);
+}
+
+
+
+
+
+
+
+
+.footer {
+  width: 100%;
+  min-height: 140px;
+  margin-bottom: 20px;
+  padding: 0 100px;
+  background-color: #1BBBD7;
+  box-shadow: 0 2px 3px 0 rgba(71, 71, 71, 0.4);
+}
+
+
+.footer .row-0 {
+  height: 99px;
+  line-height: 99px;
+}
+
+
+.footer .row-1 {
+  height: 40px;
+  line-height: 40px;
+}
+
+
+.footer hr {
+  height: 1px;
+  background-color: #fff;
+  opacity: 0.302;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+
+.link {
+  display: inline-block;
+}
+
+
+.link__btn {
+  color: #fff;
+  font-size: 22px;
+  font-family: "Fira Sans Book";
+}
+
+
+.link__line {
+  display: inline-block;
+  vertical-align: middle;
+  height: 28px;
+  width: 1px;
+  margin: 0 20px;
+  background-color: #fff;
+  opacity: 0.302;
+}
+
+
+.social,
+.btn-privacy {
+  float: right;
+}
+
+
+.social__item {
+  display: inline-block;
+}
+
+
+.social__btn {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-left: 20px;
+  position: relative;
+  top: 15px;
+  border-color: rgba(255, 255, 255, 0.55);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+
+.social__btn:hover {
+  border-color: #fff;
+}
+
+
+.social__btn {
+  text-align: center;
+}
+
+
+.social__btn-0 .social__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-image: url(../img/sprite_NLP.png);
+  background-position: 0px -265px;
+  width: 20px;
+  height: 12px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  
+  .social__btn-0 .social__icon {
+    background-image: url(../img/sprite_NLP@2x.png);
+    background-size: 28px 277px;
+  }
+}
+
+
+.social__btn {
+  text-align: center;
+}
+
+
+.social__btn-1 .social__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-image: url(../img/sprite_NLP.png);
+  background-position: 0px -178px;
+  width: 12px;
+  height: 20px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  
+  .social__btn-1 .social__icon {
+    background-image: url(../img/sprite_NLP@2x.png);
+    background-size: 28px 277px;
+  }
+}
+
+
+.copyright,
+.btn-privacy {
+  color: #fff;
+  opacity: 0.55;
+  font-size: 12px;
+  font-family: "Verdana";
+}
+
+
+.copyright {
+  display: inline-block;
+}
+
+
+.btn-privacy {
+  text-decoration: underline;
 }
 
 
