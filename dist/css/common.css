@@ -64,6 +64,36 @@
 }
 
 
+.main {
+  min-height: 100px;
+  padding: 70px 0 60px;
+  background-color: #fff;
+  box-shadow: 0 2px 3px 0 rgba(71, 71, 71, 0.4);
+}
+
+
+.main__title, .main__sub-title {
+  color: #58697A;
+  text-align: center;
+  padding: 0 15px;
+}
+
+
+.main__title {
+  font-size: 36px;
+  font-family: "Fira Sans Light";
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+
+
+.main__sub-title {
+  font-size: 22px;
+  font-family: "Fira Sans Book";
+}
+
+
 
 
 
@@ -282,6 +312,7 @@
   min-height: 100px;
   line-height: 100px;
   padding: 0 100px;
+  margin-bottom: 20px;
   background-color: #E74C3C;
   box-shadow: 0 2px 3px 0 rgba(71, 71, 71, 0.4);
 }

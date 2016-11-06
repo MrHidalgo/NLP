@@ -20,6 +20,7 @@ $w-all			: return-value(dimension, all);
 
 $c-cinnabar	: return-value(color, cinnabar);
 
+
 ///
 /// MAIN
 ///
@@ -30,6 +31,7 @@ $c-cinnabar	: return-value(color, cinnabar);
 	line-height: 100px;
 
 	padding: 0 100px;
+	margin-bottom: 20px;
 
 	background-color: $c-cinnabar;
 	box-shadow: 0 2px 3px 0 rgba(71,71,71,0.4);

@@ -6,3 +6,49 @@
 ///
 /// DECLARATION VARIABLE
 ///
+$c-white				: return-value(color, white);
+$c-shuttleGrey	: return-value(color, shuttleGrey);
+
+$f-FS_light			: return-value(fonts, FS_light);
+$f-FS_book			: return-value(fonts, FS_book);
+
+
+
+///
+/// MAIN
+///
+.main {
+	min-height: 100px;
+
+	padding: 70px 0 60px;
+
+	background-color: $c-white;
+	box-shadow: 0 2px 3px 0 rgba(71,71,71,0.4);
+
+
+	&__title,
+	&__sub-title {
+		color: $c-shuttleGrey;
+		text-align: center;
+		padding: 0 15px;
+	}
+
+
+	&__title {
+		font: {
+			size: 36px;
+			family: $f-FS_light;
+		}
+		letter-spacing: 2px;
+		line-height: 1;
+		margin-bottom: 40px;
+	}
+
+
+	&__sub-title {
+		font: {
+			size: 22px;
+			family: $f-FS_book;
+		}
+	}
+}
