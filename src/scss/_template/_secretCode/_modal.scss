@@ -8,7 +8,7 @@
 ///
 @import "../../_variable/sprite_NLP";
 ///
-/// VARIABLE
+/// DECLARATION VARIABLE
 ///
 $c-white				: return-value(color, white);
 $c-shuttleGrey	: return-value(color, shuttleGrey);
@@ -144,6 +144,7 @@ $f-V_regular		: return-value(fonts, V_regular);
 				color: $c-white;
 				border-color: $c-shuttleGrey;
 				background-color: $c-shuttleGrey;
+				pointer-events: auto;
 			}
 		}
 	}
@@ -161,6 +162,7 @@ $f-V_regular		: return-value(fonts, V_regular);
 		display: inline-block;
 		@include mixinDimensions(166px, 46px);
 		line-height: 46px;
+		pointer-events: none;
 
 		font: {
 			family: $f-FS_bold;
