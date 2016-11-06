@@ -1,0 +1,11 @@
+{
+  "styleLink" : [
+    "./css/common.min.css",
+    "./css/start_form.css"
+  ],
+
+  "scriptLink" : [
+    "./script/jquery-1.11.1.min.js",
+    "./script/start_form.js"
+  ]
+}

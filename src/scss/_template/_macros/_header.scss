@@ -1,0 +1,33 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+///
+///	SPRITE
+///
+@import "../../_variable/sprite_NLP";
+///
+///	TMPL
+///
+@import "../../_template/_header/_logo";
+@import "../../_template/_header/_nav";
+@import "../../_template/_header/_login";
+///
+/// DECLARATION VARIABLE
+///
+$w-all			: return-value(dimension, all);
+
+$c-cinnabar	: return-value(color, cinnabar);
+
+///
+/// MAIN
+///
+.header {
+	position: relative;
+	width: $w-all;
+	min-height: 100px;
+	line-height: 100px;
+	background-color: $c-cinnabar;
+	box-shadow: 0 2px 3px 0 rgba(71,71,71,0.4);
+}

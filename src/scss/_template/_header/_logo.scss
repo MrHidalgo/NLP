@@ -1,0 +1,42 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+
+
+
+///
+/// MAIN
+///
+.logo {
+	display: inline-block;
+	margin-left: 100px;
+
+
+	&__icon,
+	&__icon-retina {
+		display: inline-block;
+		vertical-align: middle;
+		@include mixinDimensions(80px, auto);
+	}
+
+
+	&__icon-retina {
+		display: none;
+	}
+}
+
+
+/// RETINA
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+	.logotype {
+		&__icon {
+			display: none;
+		}
+		&__icon-retina {
+			display: inline-block;
+		}
+	}
+}

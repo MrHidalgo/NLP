@@ -1,0 +1,57 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+///
+/// DECLARATION VARIABLE
+///
+$c-white				: return-value(color, white);
+$c-shuttleGrey	: return-value(color, shuttleGrey);
+
+$f-FS_bold			: return-value(fonts, FS_bold);
+
+
+.login {
+	position: absolute;
+	right: 100px;
+	top: 0;
+
+
+	&__btn-sign,
+	&__btn-profile {
+		display: inline-block;
+		@include mixinDimensions(121px, 36px);
+		line-height: 36px;
+
+		border: {
+			radius: 4px;
+			width: 2px;
+			style: solid;
+			color: $c-white;
+		}
+
+		text-align: center;
+		color: $c-white;
+		font: {
+			family: $f-FS_bold;
+		}
+
+		transition: all .3s ease-in-out;
+
+
+		&:hover {
+			background-color: $c-shuttleGrey;
+		}
+	}
+
+
+	&__btn-sign {
+		margin-right: 10px;
+	}
+
+
+	&__btn-profile {
+		margin-left: 10px;
+	}
+}

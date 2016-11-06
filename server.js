@@ -10,6 +10,12 @@ app.use('/',	        express.static('./dist/',
         'index' : 'secret_code.html'
     }
 ));
+// START FORM
+app.use('/starts',	        express.static('./dist/',
+    {
+        'index' : 'start_form.html'
+    }
+));
 
 
 app.listen(app.get('port'),	function()	{

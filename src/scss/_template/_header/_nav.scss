@@ -1,0 +1,66 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+///
+///	SPRITE
+///
+@import "../../_variable/sprite_NLP";
+///
+/// DECLARATION VARIABLE
+///
+$c-white				: return-value(color, white);
+
+$f-FS_bold			: return-value(fonts, FS_bold);
+
+
+.nav {
+	display: inline-block;
+	margin-left: 115px;
+
+
+	&__item {
+		display: inline-block;
+	}
+
+
+	&__btn {
+		color: $c-white;
+		font: {
+			family: $f-FS_bold;
+		}
+		margin-right: 30px;
+
+
+		&:hover {
+			.nav__text {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+
+@each $className, $imgName, $imgNameHover in
+		("training",	$sp-i-training-group, $sp-i-training-hover-group),
+		("community",	$sp-i-comunity-group, $sp-i-comunity-hover-group),
+		("diary",			$sp-i-diary-group,    $sp-i-diary-hover-group)
+{
+	.nav__btn-#{$className} {
+		.nav__icon {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+			transition: all .3s ease-in-out;
+			@include retina-sprite($imgName);
+		}
+
+
+		&:hover {
+			.nav__icon {
+				@include retina-sprite($imgNameHover);
+			}
+		}
+	}
+}
