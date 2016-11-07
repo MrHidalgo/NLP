@@ -4,3 +4,40 @@
 
 
 
+
+.main__wrap {
+  padding: 0 12.5em;
+}
+
+@media (max-width: 1199px) {
+  
+  .main__wrap {
+    padding: 0 6.25em;
+  }
+}
+
+
+#form__message:hover {
+  box-shadow: 0 2px 20px 0 rgba(71, 71, 71, 0.1);
+}
+
+
+#form__message {
+  resize: none;
+  width: 100%;
+  min-height: 116px;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-family: "Verdana";
+  font-size: 18px;
+  color: #58697A;
+  background-color: #fff;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #eeeeee;
+}
+
+
+.btn-start-form {
+  float: right;
+}

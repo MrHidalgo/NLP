@@ -14,7 +14,54 @@
 ///
 /// DECLARATION VARIABLE
 ///
+$c-white      : return-value(color, white);
+$c-shuttleGrey: return-value(color, shuttleGrey);
+
+$f-V_regular  : return-value(fonts, V_regular);
+
 
 ///
 /// MAIN
 ///
+.main__wrap {
+	padding: 0 render-pixel(200px);
+	@include respond-to("large") {
+		padding: 0 render-pixel(100px);
+	}
+}
+
+
+#form__message {
+	&:hover {
+		box-shadow: 0 2px 20px 0 rgba(71, 71, 71, 0.1);
+	}
+}
+
+
+#form__message {
+	resize: none;
+
+	width: 100%;
+	min-height: 116px;
+
+	padding: 20px;
+	margin-bottom: 20px;
+
+	font: {
+		family: $f-V_regular;
+		size: 18px;
+	}
+	color: $c-shuttleGrey;
+
+	background-color: $c-white;
+	border: {
+		width: 2px;
+		style: solid;
+		color: rgb(238,238,238);
+	}
+}
+
+
+.btn-start-form {
+	float: right;
+}

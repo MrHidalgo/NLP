@@ -8,9 +8,11 @@
 ///
 $c-white				: return-value(color, white);
 $c-shuttleGrey	: return-value(color, shuttleGrey);
+$c-silverTree 	: return-value(color, silverTree);
 
 $f-FS_light			: return-value(fonts, FS_light);
 $f-FS_book			: return-value(fonts, FS_book);
+$f-FS_bold			: return-value(fonts, FS_bold);
 
 
 
@@ -50,5 +52,37 @@ $f-FS_book			: return-value(fonts, FS_book);
 			size: 22px;
 			family: $f-FS_book;
 		}
+		margin-bottom: 15px;
+	}
+}
+
+
+.btn {
+	height: 40px;
+	line-height: 39px;
+	border: {
+		radius: 4px;
+	}
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font: {
+		family: $f-FS_bold;
+		size: 16px;
+	}
+	color: $c-white;
+	background-color: $c-shuttleGrey;
+	box-shadow: 0 2px 4px 0 rgba(71, 71, 71, 0.3);
+	transition: all 0.3s ease-in-out;
+
+
+	&:hover {
+		background-color: $c-silverTree;
+		box-shadow: 0 4px 8px 0 rgba(71, 71, 71, 0.2);
+	}
+
+
+	&_small {
+		width: 125px;
 	}
 }

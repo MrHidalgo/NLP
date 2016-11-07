@@ -18,10 +18,19 @@ html
 
 
             .main
+                .main__wrap
 
-                h1.main__title!= "Заполните данные анкеты"
+                    h1.main__title!= "Заполните данные анкеты"
 
-                h2.main__sub-title!= "Напишите Ваши цели с которыми Вы пришли на тренинг"
+                    form(action="", class="clearfix")
+
+
+
+                        h2.main__sub-title!= "Напишите Ваши цели с которыми Вы пришли на тренинг"
+
+                        textarea(id="form__message", name="form__message", placeholder="Введиет текст...")
+
+                        button(type="submit", id="btn-submit" class="btn btn-start-form btn_small")!= "Сохранить"
 
 
             //- FOOTER
