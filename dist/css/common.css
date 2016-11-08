@@ -64,6 +64,38 @@
 }
 
 
+input,
+textarea {
+  resize: none;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  font-family: "Verdana";
+  font-size: 18px;
+  color: #58697A;
+  background-color: #fff;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #eeeeee;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+
+input:focus, input:hover,
+textarea:focus,
+textarea:hover {
+  border-color: #fff;
+  outline: none;
+  box-shadow: 0 2px 20px 0 rgba(71, 71, 71, 0.1);
+}
+
+
+input {
+  height: 40px;
+  line-height: 40px;
+}
+
+
 .main {
   min-height: 100px;
   padding: 70px 0 60px;
@@ -169,6 +201,13 @@
   margin-left: 115px;
 }
 
+@media (max-width: 1199px) {
+  
+  .nav {
+    margin-left: 50px;
+  }
+}
+
 
 .nav__item {
   display: inline-block;
@@ -179,6 +218,13 @@
   color: #fff;
   font-family: "Fira Sans Bold";
   margin-right: 30px;
+}
+
+@media (max-width: 1199px) {
+  
+  .nav__btn {
+    margin-right: 20px;
+  }
 }
 
 
@@ -194,7 +240,7 @@
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -234px;
+  background-position: 0px -389px;
   width: 26px;
   height: 26px;
 }
@@ -203,14 +249,14 @@
   
   .nav__btn-training .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 28px 277px;
+    background-size: 30px 467px;
   }
 }
 
 
 .nav__btn-training:hover .nav__icon {
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -203px;
+  background-position: 0px -358px;
   width: 26px;
   height: 26px;
 }
@@ -219,7 +265,7 @@
   
   .nav__btn-training:hover .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 28px 277px;
+    background-size: 30px 467px;
   }
 }
 
@@ -231,7 +277,7 @@
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -93px;
+  background-position: 0px -128px;
   width: 28px;
   height: 18px;
 }
@@ -240,14 +286,14 @@
   
   .nav__btn-community .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 28px 277px;
+    background-size: 30px 467px;
   }
 }
 
 
 .nav__btn-community:hover .nav__icon {
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -70px;
+  background-position: 0px -105px;
   width: 28px;
   height: 18px;
 }
@@ -256,7 +302,7 @@
   
   .nav__btn-community:hover .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 28px 277px;
+    background-size: 30px 467px;
   }
 }
 
@@ -268,7 +314,7 @@
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -147px;
+  background-position: 0px -182px;
   width: 18px;
   height: 26px;
 }
@@ -277,14 +323,14 @@
   
   .nav__btn-diary .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 28px 277px;
+    background-size: 30px 467px;
   }
 }
 
 
 .nav__btn-diary:hover .nav__icon {
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -116px;
+  background-position: 0px -151px;
   width: 18px;
   height: 26px;
 }
@@ -293,7 +339,7 @@
   
   .nav__btn-diary:hover .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 28px 277px;
+    background-size: 30px 467px;
   }
 }
 
@@ -346,6 +392,13 @@
   box-shadow: 0 2px 3px 0 rgba(71, 71, 71, 0.4);
 }
 
+@media (max-width: 1199px) {
+  
+  .header {
+    padding: 0 50px;
+  }
+}
+
 
 
 
@@ -360,6 +413,13 @@
   padding: 0 100px;
   background-color: #1BBBD7;
   box-shadow: 0 2px 3px 0 rgba(71, 71, 71, 0.4);
+}
+
+@media (max-width: 1199px) {
+  
+  .footer {
+    padding: 0 50px;
+  }
 }
 
 
@@ -453,7 +513,7 @@
   right: 0;
   margin: auto;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -265px;
+  background-position: 0px -455px;
   width: 20px;
   height: 12px;
 }
@@ -462,7 +522,7 @@
   
   .social__btn-0 .social__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 28px 277px;
+    background-size: 30px 467px;
   }
 }
 
@@ -480,7 +540,7 @@
   right: 0;
   margin: auto;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -178px;
+  background-position: 0px -273px;
   width: 12px;
   height: 20px;
 }
@@ -489,7 +549,7 @@
   
   .social__btn-1 .social__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 28px 277px;
+    background-size: 30px 467px;
   }
 }
 

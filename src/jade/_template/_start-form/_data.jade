@@ -1,0 +1,33 @@
+
+.data
+    .data__left
+
+        .img-wrap
+            .img-load
+                img(src="./img/img-avatar.png", class="img-avatar", alt="avatar")
+            a(href="javascript:void(0);", class="btn-img-load")
+                i.btn-img-load__icon
+                span.btn-img-load__text!= "Загрузить аватар"
+
+
+    .data__right
+
+        .input-wrap
+            .input
+                input(type="text", name="user_name", id="user_name", placeholder="Ф.И.О")
+                label(for="user_name", class="label-name")
+                    i.icon
+            i.input__icon
+
+        .input-wrap
+            .input
+                input(type="text", name="user_phone", id="user_phone", placeholder="Телефон")
+                label(for="user_phone", class="label-phone")
+                    i.icon
+            i.input__icon
+
+        .input-wrap
+            .input
+                textarea(name="user_info", id="user_info", placeholder="Введиет текст...")
+                label(for="user_info" class="label-info")
+                    i.icon

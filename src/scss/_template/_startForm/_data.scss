@@ -1,0 +1,178 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+///
+///	SPRITE
+///
+@import "../../_variable/sprite_NLP";
+///
+/// DECLARATION VARIABLE
+///
+$c-white				: return-value(color, white);
+$c-aliceBlue  	: return-value(color, aliceBlue);
+$c-shuttleGrey	: return-value(color, shuttleGrey);
+$c-cinnabar   	: return-value(color, cinnabar);
+$c-irisBlue   	: return-value(color, irisBlue);
+
+$f-V_regular    : return-value(fonts, V_regular);
+
+
+.data {
+	margin-bottom: 40px;
+
+
+	&__left,
+	&__right {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+
+	&__left {
+		margin-right: 130px;
+	}
+}
+
+
+.img {
+	&-wrap {
+		border : {
+			width: 5px;
+			style: solid;
+			color: $c-aliceBlue;
+		}
+		text-align: center;
+
+		@include mixinDimensions(260px, 250px);
+	}
+
+
+	&-load {
+		display: block;
+		margin: 50px auto 20px;
+		border-radius: 50%;
+		overflow: hidden;
+		@include mixinDimensions(101px);
+
+	}
+
+
+	&-avatar {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+
+.btn-img-load {
+	font: {
+		family: $f-V_regular;
+		size: 18px;
+	}
+	position: relative;
+	color: $c-shuttleGrey;
+	text-decoration: underline;
+
+
+	&__icon {
+		position: absolute;
+		left: -25px;
+		top: 2px;
+		@include retina-sprite($sp-i-load-img-group);
+	}
+}
+
+
+#user {
+	&_name,
+	&_phone,
+	&_info {
+		width: 375px;
+		@include respond-to("large") {
+			width: 415px;
+		}
+	}
+
+
+	&_info {
+		height: 130px;
+		padding: 5px 20px;
+		margin-bottom: 0;
+	}
+}
+
+
+.input {
+	position: relative;
+
+	&-wrap {
+		position: relative;
+
+
+		.input__icon {
+			display: none;
+		}
+
+
+		&.error,
+		&.done {
+			.input__icon {
+				display: block;
+				position: absolute;
+				right: -40px;
+				top: 7px;
+			}
+		}
+
+
+		&.error {
+			#user {
+				&_name,
+				&_phone,
+				&_info {
+					color: $c-cinnabar;
+				}
+			}
+
+			.input__icon {
+				@include retina-sprite($sp-i-error-group);
+			}
+		}
+
+
+		&.done {
+			#user {
+				&_name,
+				&_phone,
+				&_info {
+					color: $c-irisBlue;
+				}
+			}
+
+			.input__icon {
+				@include retina-sprite($sp-i-done-group)
+			}
+		}
+	}
+
+
+	&__icon {}
+}
+
+
+@each $className, $iName in
+		("name",  $sp-i-user-group),
+		("phone", $sp-i-phone-group),
+		("info",  $sp-i-chat-group)
+{
+	.label-#{$className} {
+		.icon {
+			position: absolute;
+			top: 5px;
+			left: -45px;
+			@include retina-sprite($iName);
+		}
+	}
+}

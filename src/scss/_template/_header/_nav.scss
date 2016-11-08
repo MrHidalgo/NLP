@@ -18,6 +18,9 @@ $f-FS_bold			: return-value(fonts, FS_bold);
 .nav {
 	display: inline-block;
 	margin-left: 115px;
+	@include respond-to("large") {
+		margin-left: 50px;
+	}
 
 
 	&__item {
@@ -31,6 +34,9 @@ $f-FS_bold			: return-value(fonts, FS_bold);
 			family: $f-FS_bold;
 		}
 		margin-right: 30px;
+		@include respond-to("large") {
+			margin-right: 20px;
+		}
 
 
 		&:hover {

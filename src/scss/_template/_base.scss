@@ -13,12 +13,50 @@ $c-silverTree 	: return-value(color, silverTree);
 $f-FS_light			: return-value(fonts, FS_light);
 $f-FS_book			: return-value(fonts, FS_book);
 $f-FS_bold			: return-value(fonts, FS_bold);
+$f-V_regular    : return-value(fonts, V_regular);
 
 
 
 ///
 /// MAIN
 ///
+input,
+textarea {
+	resize: none;
+	padding: 0 20px;
+	margin-bottom: 20px;
+
+	font: {
+		family: $f-V_regular;
+		size: 18px;
+	}
+	color: $c-shuttleGrey;
+
+	background-color: $c-white;
+	border: {
+		width: 2px;
+		style: solid;
+		color: rgb(238,238,238);
+	}
+	transition: all .3s ease-in-out;
+
+
+
+	&:focus,
+	&:hover {
+		border-color: $c-white;
+		outline: none;
+		box-shadow: 0 2px 20px 0 rgba(71, 71, 71, 0.1);
+	}
+}
+
+
+input {
+	height: 40px;
+	line-height: 40px;
+}
+
+
 .main {
 	min-height: 100px;
 

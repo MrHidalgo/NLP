@@ -32,6 +32,9 @@ $f-V_regular: return-value(fonts, V_regular);
 
 	background-color: $c-irisBlue;
 	box-shadow: 0 2px 3px 0 rgba(71,71,71,0.4);
+	@include respond-to("large") {
+		padding: 0 50px;
+	}
 
 
 	.row {
