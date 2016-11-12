@@ -127,6 +127,26 @@ input {
 }
 
 
+.main__wrap {
+  width: 770px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1199px) {
+  
+  .main__wrap {
+    width: 810px;
+  }
+}
+
+
+.form__message {
+  width: 100%;
+  min-height: 116px;
+  padding: 20px;
+}
+
+
 .btn {
   height: 40px;
   line-height: 39px;
@@ -137,6 +157,7 @@ input {
   font-family: "Fira Sans Bold";
   font-size: 16px;
   color: #fff;
+  text-align: center;
   background-color: #58697A;
   box-shadow: 0 2px 4px 0 rgba(71, 71, 71, 0.3);
   -webkit-transition: all 0.3s ease-in-out;
@@ -155,8 +176,18 @@ input {
 }
 
 
+.btn_small-big {
+  width: 170px;
+}
+
+
 .btn_medium {
   width: 370px;
+}
+
+
+.btn_big {
+  width: 100%;
 }
 
 
@@ -245,7 +276,7 @@ input {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -389px;
+  background-position: 0px -259px;
   width: 26px;
   height: 26px;
 }
@@ -254,14 +285,14 @@ input {
   
   .nav__btn-training .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 467px;
+    background-size: 28px 302px;
   }
 }
 
 
 .nav__btn-training:hover .nav__icon {
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -358px;
+  background-position: 0px -228px;
   width: 26px;
   height: 26px;
 }
@@ -270,7 +301,7 @@ input {
   
   .nav__btn-training:hover .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 467px;
+    background-size: 28px 302px;
   }
 }
 
@@ -282,7 +313,7 @@ input {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -128px;
+  background-position: 0px -118px;
   width: 28px;
   height: 18px;
 }
@@ -291,14 +322,14 @@ input {
   
   .nav__btn-community .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 467px;
+    background-size: 28px 302px;
   }
 }
 
 
 .nav__btn-community:hover .nav__icon {
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -105px;
+  background-position: 0px -95px;
   width: 28px;
   height: 18px;
 }
@@ -307,7 +338,7 @@ input {
   
   .nav__btn-community:hover .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 467px;
+    background-size: 28px 302px;
   }
 }
 
@@ -319,7 +350,7 @@ input {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -182px;
+  background-position: 0px -172px;
   width: 18px;
   height: 26px;
 }
@@ -328,14 +359,14 @@ input {
   
   .nav__btn-diary .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 467px;
+    background-size: 28px 302px;
   }
 }
 
 
 .nav__btn-diary:hover .nav__icon {
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -151px;
+  background-position: 0px -141px;
   width: 18px;
   height: 26px;
 }
@@ -344,7 +375,7 @@ input {
   
   .nav__btn-diary:hover .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 467px;
+    background-size: 28px 302px;
   }
 }
 
@@ -518,7 +549,7 @@ input {
   right: 0;
   margin: auto;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -455px;
+  background-position: 0px -290px;
   width: 20px;
   height: 12px;
 }
@@ -527,7 +558,7 @@ input {
   
   .social__btn-0 .social__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 467px;
+    background-size: 28px 302px;
   }
 }
 
@@ -545,7 +576,7 @@ input {
   right: 0;
   margin: auto;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -273px;
+  background-position: 0px -203px;
   width: 12px;
   height: 20px;
 }
@@ -554,7 +585,7 @@ input {
   
   .social__btn-1 .social__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 467px;
+    background-size: 28px 302px;
   }
 }
 

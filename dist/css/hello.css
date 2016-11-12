@@ -32,6 +32,7 @@
   border-style: solid;
   border-color: #F3F5F7;
   text-align: center;
+  position: relative;
   width: 260px;
   height: 250px;
 }
@@ -257,6 +258,7 @@
 .hello_bg {
   position: absolute;
   width: 100%;
+  height: 100%;
   top: 0;
   background-color: rgba(0, 0, 0, 0.85);
   z-index: 100;

@@ -1,0 +1,49 @@
+
+.data.data_upload
+    .data__left
+
+        .img-wrap
+            .img-load
+                img(src="./img/img-avatar_load.jpg", class="img-avatar", alt="avatar")
+            a(href="javascript:void(0);", class="btn-img-delete")
+                i.btn-img-delete__icon
+
+
+    .data__right
+
+        .input-wrap
+            .input
+                input(type="text", name="user_name", id="user_name", value="Бойко Дмитро Борисович")
+                label(for="user_name", class="label-name")
+                    i.icon
+
+        .input-wrap
+            .input
+                input(type="text", name="user_phone", id="user_phone", value="050 66-55-775")
+                label(for="user_phone", class="label-phone")
+                    i.icon
+
+        .input-wrap
+            .input
+                textarea(name="user_info", id="user_info")
+                    | Веб дизайнер
+
+                label(for="user_info" class="label-info")
+                    i.icon
+
+
+    .data__bottom.clearfix
+        .info__wrap
+            p.info__place
+                | Место в группе: <span class="info__place_in"><strong>101</strong></span> / <span class="info__place_total"><strong>107</strong></span>
+
+            p.info__progress
+                | Прогресс: <span class="info__progress_mark"><strong>24</strong></span> балла
+
+            p.info__insight
+                | Инсайты: <span class="info__insight_mark"><strong>27</strong></span> балла
+
+            p.info__mark
+                | Оценка группы: <span class="info__mark_total"><strong>127</strong></span> баллов
+
+        a(href="javascript:void(0);", class="btn btn_small-big btn-edit")!= "Редактировать"

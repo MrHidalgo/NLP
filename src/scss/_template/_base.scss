@@ -95,6 +95,22 @@ input {
 }
 
 
+.main__wrap {
+	width: 770px;
+	margin: 0 auto;
+	@include respond-to("large") {
+		width: 810px;
+	}
+}
+
+
+.form__message {
+	width: 100%;
+	min-height: 116px;
+	padding: 20px;
+}
+
+
 .btn {
 	height: 40px;
 	line-height: 39px;
@@ -109,6 +125,7 @@ input {
 		size: 16px;
 	}
 	color: $c-white;
+	text-align: center;
 	background-color: $c-shuttleGrey;
 	box-shadow: 0 2px 4px 0 rgba(71, 71, 71, 0.3);
 	transition: all 0.3s ease-in-out;
@@ -125,7 +142,17 @@ input {
 	}
 
 
+	&_small-big {
+		width: 170px;
+	}
+
+
 	&_medium {
 		width: 370px;
+	}
+
+
+	&_big {
+		width: 100%;
 	}
 }

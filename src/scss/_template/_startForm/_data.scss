@@ -45,6 +45,7 @@ $f-V_regular    : return-value(fonts, V_regular);
 		}
 		text-align: center;
 
+		position: relative;
 		@include mixinDimensions(260px, 250px);
 	}
 

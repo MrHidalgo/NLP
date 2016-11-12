@@ -224,13 +224,70 @@
 }
 
 
-#form__message {
+.data_upload .img-load {
   width: 100%;
-  min-height: 116px;
-  padding: 20px;
+  height: 100%;
+  border-radius: 0;
+  margin: 0;
 }
 
 
-.btn-start-form {
+.data_upload .img-avatar {
+  max-width: initial;
+  max-height: 100%;
+  height: initial;
+  -webkit-transform: translateX(-20%);
+      -ms-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+
+
+.data__bottom {
+  margin-top: 15px;
+}
+
+
+.btn-img-delete__icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-image: url(../img/sprite_NLP.png);
+  background-position: 0px -242px;
+  width: 26px;
+  height: 26px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  
+  .btn-img-delete__icon {
+    background-image: url(../img/sprite_NLP@2x.png);
+    background-size: 30px 467px;
+  }
+}
+
+
+.info__wrap {
+  float: left;
+}
+
+
+.info__place {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+
+.info__progress, .info__insight, .info__mark {
+  font-size: 14px;
+}
+
+
+.info__place, .info__progress, .info__insight, .info__mark {
+  font-family: "Verdana";
+  color: #58697A;
+}
+
+
+.btn-edit {
   float: right;
 }

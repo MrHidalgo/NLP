@@ -23,22 +23,6 @@ $f-V_regular  : return-value(fonts, V_regular);
 ///
 /// MAIN
 ///
-.main__wrap {
-	width: 770px;
-	margin: 0 auto;
-	@include respond-to("large") {
-		width: 810px;
-	}
-}
-
-
-#form__message {
-	width: 100%;
-	min-height: 116px;
-	padding: 20px;
-}
-
-
 .btn-start-form {
 	float: right;
 }

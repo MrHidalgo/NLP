@@ -68,7 +68,7 @@ $f-V_regular  : return-value(fonts, V_regular);
 
 .hello_bg {
 	position: absolute;
-	width: 100%;
+	@include mixinDimensions($w-all);
 	top: 0;
 	background-color: rgba(0,0,0,0.85);
 	z-index: 100;
