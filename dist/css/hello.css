@@ -223,26 +223,47 @@
 }
 
 
-.main__wrap {
+.video {
+  position: relative;
+  z-index: 101;
+  padding: 95px 0 35px;
+  text-align: center;
+}
+
+
+.video__title {
+  font-size: 30px;
+  font-family: "Fira Sans Light";
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+
+.video__wrap iframe {
   width: 770px;
-  margin: 0 auto;
-}
-
-@media (max-width: 1199px) {
-  
-  .main__wrap {
-    width: 810px;
-  }
+  min-width: 300px;
+  max-width: 770px;
+  min-height: 400px;
 }
 
 
-#form__message {
+.hello__page .header .logo,
+.hello__page .header .nav__btn-training {
+  position: relative;
+  z-index: 101;
+}
+
+
+.hello_bg {
+  position: absolute;
   width: 100%;
-  min-height: 116px;
-  padding: 20px;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 100;
 }
 
 
-.btn-start-form {
-  float: right;
+.btn-go {
+  display: inline-block;
+  margin: 15px 0;
 }

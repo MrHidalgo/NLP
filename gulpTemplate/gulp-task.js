@@ -55,14 +55,14 @@ function jadeMainTask(taskName) {
                 }
             ))
             .pipe(plumber.stop())
-            .pipe(gulp.dest('./dist/'))
-            .pipe(
-                notify(
-                    {
-                        message : 'JADE file complete in ... ',
-                        onLast  : true
-                    })
-            )
+            .pipe(gulp.dest('./dist/'));
+            // .pipe(
+            //     notify(
+            //         {
+            //             message : 'JADE file complete in ... ',
+            //             onLast  : true
+            //         })
+            // )
     })
 }
 
@@ -84,13 +84,13 @@ function mainScriptTask(taskName) {
             .pipe(
                 gulp.dest(dist)
             )
-            .pipe(
-                notify(
-                    {
-                        message : 'SCRIPT file complete in ... ',
-                        onLast  : true
-                    })
-            )
+            // .pipe(
+            //     notify(
+            //         {
+            //             message : 'SCRIPT file complete in ... ',
+            //             onLast  : true
+            //         })
+            // )
             .pipe(uglify())
             .pipe(rename(
                 {
@@ -99,14 +99,14 @@ function mainScriptTask(taskName) {
             )
             .pipe(
                 gulp.dest(dist)
-            )
-            .pipe(
-                notify(
-                    {
-                        message : 'SCRIPT file complete in min... ',
-                        onLast  : true
-                    })
-            )
+            );
+            // .pipe(
+            //     notify(
+            //         {
+            //             message : 'SCRIPT file complete in min... ',
+            //             onLast  : true
+            //         })
+            // )
     });
 }
 
@@ -154,24 +154,24 @@ function styleMainTask(taskName) {
 			.pipe(
 				gulp.dest(dest)
 			)
-            .pipe(
-                notify(
-                    {
-                        message : 'SCSS file complete in ... ',
-                        onLast  : true
-                    })
-            )
+            // .pipe(
+            //     notify(
+            //         {
+            //             message : 'SCSS file complete in ... ',
+            //             onLast  : true
+            //         })
+            // )
             .pipe(stripCssComments())
             .pipe(
                 gulp.dest(dest)
             )
-            .pipe(
-                notify(
-                    {
-                        message : 'Remove comments in ... ',
-                        onLast  : true
-                    })
-            )
+            // .pipe(
+            //     notify(
+            //         {
+            //             message : 'Remove comments in ... ',
+            //             onLast  : true
+            //         })
+            // )
             .pipe(cssmin(
                 {
                     showLog : true,
@@ -186,14 +186,14 @@ function styleMainTask(taskName) {
             )
             .pipe(
                 gulp.dest(dest)
-            )
-            .pipe(
-                notify(
-                    {
-                        message : 'Minify file finish ... ',
-                        onLast  : true
-                    })
-            )
+            );
+            // .pipe(
+            //     notify(
+            //         {
+            //             message : 'Minify file finish ... ',
+            //             onLast  : true
+            //         })
+            // )
 	});
 }
 
@@ -210,13 +210,13 @@ function imageSprites(taskName) {
         destCss         = './src/scss/_variable/';
 
         var spriteData = gulp.src(src)
-            .pipe(
-                notify(
-                    {
-                        message : 'Sprite build in ... ',
-                        onLast  : true
-                    }
-                ))
+            // .pipe(
+            //     notify(
+            //         {
+            //             message : 'Sprite build in ... ',
+            //             onLast  : true
+            //         }
+            //     ))
             .pipe(spritesmith(
                 {
                     imgName         : 'sprite_NLP.png',

@@ -148,6 +148,7 @@ $f-V_regular    : return-value(fonts, V_regular);
 				&_phone,
 				&_info {
 					color: $c-irisBlue;
+					border: 1px solid $c-irisBlue;
 				}
 			}
 
@@ -156,9 +157,6 @@ $f-V_regular    : return-value(fonts, V_regular);
 			}
 		}
 	}
-
-
-	&__icon {}
 }
 
 

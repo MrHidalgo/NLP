@@ -1,0 +1,39 @@
+include _mixin/mixin
+
+
+doctype html
+html
+
+
+    +headSite('Приветствие', hello.styleLink, data.fontLink)
+
+
+    body.hello__page
+
+        .hello_bg
+
+        .container
+
+            //- HEADER [logotype, navigation, {signIn, profile - btn} ]
+            block header
+                include _template/macros/_header
+
+
+            .video
+                h1.video__title!= "Приветственное видео"
+
+                .video__wrap
+                    iframe(src="https://www.youtube.com/embed/aqXW57WM9TA" frameborder="0" allowfullscreen)
+
+                .video__btn
+                    a(href="javascript:void(0);", class="btn btn_medium btn-go")!= "Давайте начнем путишествие"
+
+
+
+            //- FOOTER
+            block footer
+                include _template/macros/_footer
+
+
+        - for(var i = 0; i < hello.scriptLink.length; i++)
+            script(src= hello.scriptLink[i])

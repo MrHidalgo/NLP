@@ -1,0 +1,11 @@
+{
+  "styleLink" : [
+    "./css/common.min.css",
+    "./css/hello.css"
+  ],
+
+  "scriptLink" : [
+    "./script/jquery-1.11.1.min.js",
+    "./script/hello.js"
+  ]
+}
