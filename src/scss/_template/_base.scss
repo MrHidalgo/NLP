@@ -1,22 +1,19 @@
 @import "../_mixin/mixin";
 @import "../_function/function";
-
-// SPRITE [&retina]
-//@import "../_variable/sprite_sport";
 ///
 /// DECLARATION VARIABLE
 ///
 $c-white				: return-value(color, white);
+$c-viking				: return-value(color, viking);
+$c-whisper			: return-value(color, whisper);
 $c-shuttleGrey	: return-value(color, shuttleGrey);
 $c-silverTree 	: return-value(color, silverTree);
+$c-regentStBlue : return-value(color, regentStBlue);
 
 $f-FS_light			: return-value(fonts, FS_light);
 $f-FS_book			: return-value(fonts, FS_book);
 $f-FS_bold			: return-value(fonts, FS_bold);
 $f-V_regular    : return-value(fonts, V_regular);
-
-
-
 ///
 /// MAIN
 ///
@@ -66,6 +63,56 @@ input {
 	box-shadow: 0 2px 3px 0 rgba(71,71,71,0.4);
 
 
+	&_table {
+		display: table;
+		padding: 0;
+	}
+
+
+	&__wrap {
+		width: 770px;
+		margin: 0 auto;
+		@include respond-to("large") {
+			width: 810px;
+		}
+	}
+
+
+	&__left {
+		width: 470px;
+		padding-right: 30px;
+		background-color: $c-whisper;
+
+
+		&-info {
+			padding-left: 100px;
+			font: {
+				size: 14px;
+				family: $f-V_regular;
+			}
+			color: $c-shuttleGrey;
+			padding-bottom: 45px;
+			@include respond-to("large") {
+				padding-left: 50px;
+			}
+		}
+	}
+
+
+	&__right {
+		position: relative;
+		width: 1170px - 470px;
+		padding: 60px 30px;
+	}
+
+
+	&__left,
+	&__right {
+		display: table-cell;
+		vertical-align: top;
+	}
+
+
 	&__title,
 	&__sub-title {
 		color: $c-shuttleGrey;
@@ -95,13 +142,70 @@ input {
 }
 
 
-.main__wrap {
-	width: 770px;
-	margin: 0 auto;
-	@include respond-to("large") {
-		width: 810px;
+.list {
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	align-items: stretch;
+
+
+	&__block {
+		position: relative;
+		width: 170px;
+		text-align: center;
+		cursor: pointer;
+		transition: all .3s ease-in-out;
+	}
+
+
+	&__wrap {
+		&-img {
+			transition: all .3s ease-in-out;
+			overflow: hidden;
+
+			@include mixinDimensions(170px, 160px);
+			border: 5px solid $c-whisper;
+
+
+			.user-avatar {
+				max-width: initial;
+				max-height: 100%;
+				height: initial;
+				transform: translateX(-20%);
+			}
+		}
+
+
+		&-text {
+			transition: all .3s ease-in-out;
+			font: {
+				size: 14px;
+				family: $f-V_regular;
+			}
+			color: $c-viking;
+			margin-top: 5px;
+		}
 	}
 }
+
+
+
+.btn-img-avatar {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	background-color: $c-white;
+	text-align: center;
+	@include mixinDimensions(40px);
+	line-height: 40px;
+	border: {
+		radius: 50%;
+		width: 1px;
+		style: solid;
+		color: $c-regentStBlue;
+	}
+}
+
 
 
 .form__message {

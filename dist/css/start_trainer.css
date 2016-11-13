@@ -5,34 +5,8 @@
 
 
 
-.list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
-
 .list__block {
-  position: relative;
-  width: 170px;
   margin: 0 11px 20px;
-  text-align: center;
-  cursor: pointer;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
 }
 
 @media (max-width: 1199px) {
@@ -54,57 +28,11 @@
 }
 
 
-.list__wrap-img {
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  overflow: hidden;
-  width: 170px;
-  height: 160px;
-  border: 5px solid #EEE;
-}
-
-
-.list__wrap-img .user-avatar {
-  max-width: initial;
-  max-height: 100%;
-  height: initial;
-  -webkit-transform: translateX(-20%);
-      -ms-transform: translateX(-20%);
-          transform: translateX(-20%);
-}
-
-
-.list__wrap-text {
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  font-size: 14px;
-  font-family: "Verdana";
-  color: #59A9C2;
-  margin-top: 5px;
-}
-
-
-.btn-trainer {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  background-color: #fff;
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 50%;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #A7C5CF;
-}
-
-
 .btn-trainer__mail {
   vertical-align: middle;
   display: inline-block;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -618px;
+  background-position: 0px -642px;
   width: 20px;
   height: 16px;
 }
@@ -113,7 +41,7 @@
   
   .btn-trainer__mail {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -132,6 +60,6 @@
   
   .btn-trainer__warn {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }

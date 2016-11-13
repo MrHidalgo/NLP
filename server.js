@@ -28,6 +28,10 @@ app.use('/diary',	        express.static('./dist/', {
 app.use('/trainer',	        express.static('./dist/', {
         'index' : 'start_trainer.html'
 }));
+// AWARD DISTRIBUTION
+app.use('/distribution',	        express.static('./dist/', {
+        'index' : 'award_distribution.html'
+}));
 
 
 app.listen(app.get('port'),	function()	{

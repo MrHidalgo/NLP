@@ -26,42 +26,8 @@ $f-V_regular      : return-value(fonts, V_regular);
 /// MAIN
 ///
 .main {
-	padding: 0;
-	display: table;
-
-
-	&__left {
-		width: 470px;
-		padding-right: 30px;
-		background-color: $c-whisper;
-
-
-		&-info {
-			padding-left: 100px;
-			font: {
-				size: 14px;
-				family: $f-V_regular;
-			}
-			color: $c-shuttleGrey;
-			padding-bottom: 45px;
-			@include respond-to("large") {
-				padding-left: 50px;
-			}
-		}
-	}
-
-
 	&__right {
-		position: relative;
-		width: 1170px - 470px;
 		padding: 140px 30px 0;
-	}
-
-
-	&__left,
-	&__right {
-		display: table-cell;
-		vertical-align: top;
 	}
 
 

@@ -1,0 +1,92 @@
+///
+/// IMPORT BLOCK
+///
+@import "_mixin/mixin";
+@import "_function/function";
+///
+///	SPRITE
+///
+@import "_variable/sprite_NLP";
+///
+/// DECLARATION VARIABLE
+///
+$w-all				    : return-value(dimension, all);
+
+$c-white          : return-value(color, white);
+$c-shuttleGrey    : return-value(color, shuttleGrey);
+$c-silverTree	    : return-value(color, silverTree);
+
+$f-FS_light	      : return-value(fonts, FS_light);
+$f-V_bold		      : return-value(fonts, V_bold);
+///
+/// MAIN
+///
+.balls {
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	padding-top: 45px;
+	background-color: $c-white;
+	box-shadow: 0 2px 3px 0 rgba(71, 71, 71, 0.4);
+	width: 440px;
+	min-height: 160px;
+	@include respond-to("large") {
+		padding-left: 50px;
+	}
+
+
+	&__text {
+		font: {
+			family: $f-FS_light;
+			size: 36px;
+		}
+		margin-bottom: 5px;
+	}
+
+
+	&__last {
+		font: {
+			family: $f-V_bold;
+			size: 26px;
+		}
+	}
+
+
+	&__text,
+	&__last {
+		color: $c-shuttleGrey;
+		line-height: 1;
+	}
+}
+
+
+.list {
+	&__block {
+		margin: 0 20px 20px;
+		@include respond-to("large") {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+
+
+		&:hover {
+			.list__wrap-img {
+				border-color: $c-silverTree;
+				box-shadow: 0 2px 4px 0 rgba(71, 71, 71, 0.3);
+			}
+
+			.list__name {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+
+.btn-distribution {
+	&__hearth {
+		vertical-align: middle;
+		display: inline-block;
+		@include retina-sprite($sp-i-heart-group);
+	}
+}

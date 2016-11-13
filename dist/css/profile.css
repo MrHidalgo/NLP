@@ -69,7 +69,7 @@
   left: -25px;
   top: 2px;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -593px;
+  background-position: 0px -617px;
   width: 16px;
   height: 20px;
 }
@@ -78,7 +78,7 @@
   
   .btn-img-load__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -141,7 +141,7 @@
   
   .input-wrap.error .input__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -163,7 +163,7 @@
   
   .input-wrap.done .input__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -173,7 +173,7 @@
   top: 5px;
   left: -45px;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -827px;
+  background-position: 0px -851px;
   width: 26px;
   height: 30px;
 }
@@ -182,7 +182,7 @@
   
   .label-name .icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -192,7 +192,7 @@
   top: 5px;
   left: -45px;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -711px;
+  background-position: 0px -735px;
   width: 30px;
   height: 30px;
 }
@@ -201,7 +201,7 @@
   
   .label-phone .icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -220,7 +220,7 @@
   
   .label-info .icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -317,7 +317,7 @@
   
   .goals__btn-liked .goals__btn-icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -333,7 +333,7 @@
   
   .goals__btn-liked:hover .goals__btn-icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -349,7 +349,7 @@
   
   .goals__btn-item.active .goals__btn-liked .goals__btn-icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -365,7 +365,7 @@
   
   .goals__btn-edit .goals__btn-icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -381,7 +381,7 @@
   
   .goals__btn-edit:hover .goals__btn-icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -397,7 +397,7 @@
   
   .goals__btn-item.active .goals__btn-edit .goals__btn-icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -413,7 +413,7 @@
   
   .goals__btn-delete .goals__btn-icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -429,7 +429,7 @@
   
   .goals__btn-delete:hover .goals__btn-icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -445,7 +445,7 @@
   
   .goals__btn-item.active .goals__btn-delete .goals__btn-icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -487,7 +487,7 @@
   
   .btn-img-delete__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 

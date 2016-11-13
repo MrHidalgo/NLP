@@ -48,7 +48,7 @@
   top: 20px;
   right: -19px;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -675px;
+  background-position: 0px -699px;
   width: 19px;
   height: 31px;
 }
@@ -57,7 +57,7 @@
   
   .note__wrap:after {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -122,7 +122,7 @@
 .note__bottom-soc-icon {
   display: inline-block;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -660px;
+  background-position: 0px -684px;
   width: 18px;
   height: 10px;
 }
@@ -131,7 +131,7 @@
   
   .note__bottom-soc-icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -148,7 +148,7 @@
   top: 4px;
   right: 0;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -639px;
+  background-position: 0px -663px;
   width: 20px;
   height: 16px;
 }
@@ -157,50 +157,13 @@
   
   .note__active {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
-  }
-}
-
-
-.main {
-  padding: 0;
-  display: table;
-}
-
-
-.main__left {
-  width: 470px;
-  padding-right: 30px;
-  background-color: #EEE;
-}
-
-
-.main__left-info {
-  padding-left: 100px;
-  font-size: 14px;
-  font-family: "Verdana";
-  color: #58697A;
-  padding-bottom: 45px;
-}
-
-@media (max-width: 1199px) {
-  
-  .main__left-info {
-    padding-left: 50px;
+    background-size: 30px 898px;
   }
 }
 
 
 .main__right {
-  position: relative;
-  width: 700px;
   padding: 140px 30px 0;
-}
-
-
-.main__left, .main__right {
-  display: table-cell;
-  vertical-align: top;
 }
 
 
@@ -252,7 +215,7 @@
   
   .btn-add-node__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -280,7 +243,7 @@
 
 .btn-note__arrow_left {
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -512px;
+  background-position: 0px -536px;
   width: 20px;
   height: 14px;
   margin-right: 5px;
@@ -290,14 +253,14 @@
   
   .btn-note__arrow_left {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
 
 .btn-note__arrow_right {
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -746px;
+  background-position: 0px -770px;
   width: 20px;
   height: 14px;
   margin-left: 5px;
@@ -307,7 +270,7 @@
   
   .btn-note__arrow_right {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -325,7 +288,7 @@
   
   .btn-note-delete {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
@@ -341,7 +304,7 @@
   
   .btn-note-delete:hover {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 874px;
+    background-size: 30px 898px;
   }
 }
 
