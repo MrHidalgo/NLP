@@ -27,8 +27,6 @@ $f-V_regular  : return-value(fonts, V_regular);
 ///
 .data {
 	&_upload {
-
-
 		.img {
 			&-load {
 				@include mixinDimensions($w-all);

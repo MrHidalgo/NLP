@@ -68,7 +68,7 @@
   left: -25px;
   top: 2px;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -298px;
+  background-position: 0px -323px;
   width: 16px;
   height: 20px;
 }
@@ -77,7 +77,7 @@
   
   .btn-img-load__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 467px;
+    background-size: 30px 492px;
   }
 }
 
@@ -131,7 +131,7 @@
 
 .input-wrap.error .input__icon {
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -242px;
+  background-position: 0px -267px;
   width: 26px;
   height: 26px;
 }
@@ -140,7 +140,7 @@
   
   .input-wrap.error .input__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 467px;
+    background-size: 30px 492px;
   }
 }
 
@@ -153,7 +153,7 @@
 
 .input-wrap.done .input__icon {
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -213px;
+  background-position: 0px -238px;
   width: 30px;
   height: 24px;
 }
@@ -162,7 +162,7 @@
   
   .input-wrap.done .input__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 467px;
+    background-size: 30px 492px;
   }
 }
 
@@ -172,7 +172,7 @@
   top: 5px;
   left: -45px;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -420px;
+  background-position: 0px -445px;
   width: 26px;
   height: 30px;
 }
@@ -181,7 +181,7 @@
   
   .label-name .icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 467px;
+    background-size: 30px 492px;
   }
 }
 
@@ -191,7 +191,7 @@
   top: 5px;
   left: -45px;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -323px;
+  background-position: 0px -348px;
   width: 30px;
   height: 30px;
 }
@@ -200,7 +200,7 @@
   
   .label-phone .icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 467px;
+    background-size: 30px 492px;
   }
 }
 
@@ -219,15 +219,8 @@
   
   .label-info .icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 467px;
+    background-size: 30px 492px;
   }
-}
-
-
-#form__message {
-  width: 100%;
-  min-height: 116px;
-  padding: 20px;
 }
 
 
