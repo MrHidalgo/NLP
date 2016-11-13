@@ -1,12 +1,12 @@
 {
   "styleLink" : [
     "./css/common.min.css",
-    "./css/profile.css"
+    "./css/diary.css"
   ],
 
   "scriptLink" : [
     "./script/jquery-1.11.1.min.js",
     "./script/main.js",
-    "./script/profile.js"
+    "./script/diary.js"
   ]
 }

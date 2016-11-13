@@ -1,0 +1,13 @@
+form(action="", class="form__diary clearfix")
+    a(href="javascript:void(0);", class="btn-diary__edit")!= "Редактирование"
+
+
+    .input-wrap
+        .input
+            input(type="text", name="diary_title", id="diary_title", class="diary__input",  placeholder="Заголовок")
+
+
+    textarea(class="form__message form__message_diary", name="form__message")
+
+
+    button(type="submit", id="btn-submit" class="btn btn-save__diary btn_small-big")!= "Сохранить"

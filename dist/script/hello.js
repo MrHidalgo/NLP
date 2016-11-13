@@ -10,4 +10,7 @@ function addHeightAfterResize() {
 
 $(window).on("load resize", function() {
     addHeightAfterResize();
+
+
+    setTimeout($(".hello_bg").fadeOut(10000), 5000);
 });

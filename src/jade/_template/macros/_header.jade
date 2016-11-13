@@ -11,6 +11,12 @@
         "diary"
     ];
 
+    var navHref = [
+        "javascript:void(0);",
+        "javascript:void(0);",
+        "/diary"
+    ];
+
 
 .header
 
@@ -23,10 +29,10 @@
         ul.nav__list
             - for(var i = 0; i < 3; i++)
                 li.nav__item
-                    a(href="javascript:void(0);", class="nav__btn nav__btn-" + navBtnClass[i])
+                    a(href=navHref[i], class="nav__btn nav__btn-" + navBtnClass[i])
                         i.nav__icon
                         span.nav__text!= navText[i]
 
     .login
         a(href="javascript:void(0);", class="login__btn-sign")!= "Войти"
-        a(href="javascript:void(0);", class="login__btn-profile")!= "Профиль"
+        a(href="/profile", class="login__btn-profile")!= "Профиль"

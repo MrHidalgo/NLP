@@ -1,0 +1,150 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+///
+///	SPRITE
+///
+@import "../../_variable/sprite_NLP";
+///
+/// DECLARATION VARIABLE
+///
+$c-white          : return-value(color, white);
+$c-shuttleGrey    : return-value(color, shuttleGrey);
+$c-pinkSwan       : return-value(color, pinkSwan);
+$c-aliceBlue      : return-value(color, aliceBlue);
+$c-viking         : return-value(color, viking);
+
+$f-V_regular  		: return-value(fonts, V_regular);
+///
+/// MAIN
+///
+.note {
+	&__wrap {
+		cursor: pointer;
+		position: relative;
+		padding: 30px 20px 0 100px;
+		margin-bottom: 20px;
+		background-color: $c-white;
+		box-shadow: 0 2px 3px 0 rgba(71, 71, 71, 0.4);
+		font: {
+			family: $f-V_regular;
+		}
+		width: 440px;
+		min-height: 260px;
+		@include respond-to("large") {
+			padding-left: 50px;
+		}
+
+
+		&.active {
+			.note__active,
+			&:after {
+				display: block;
+			}
+		}
+
+
+		&:hover {
+			&:after {
+				display: block;
+			}
+		}
+
+
+		&:after {
+			display: none;
+			content: "";
+			position: absolute;
+			top: 20px;
+			right: -19px;
+			@include retina-sprite($sp-i-note-wrap-arrow-group);
+		}
+	}
+
+
+	&__top {
+		position: relative;
+	}
+
+
+	&__middle {
+		padding: 20px 0;
+	}
+
+
+	&__bottom {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		margin-right: 20px;
+		border-top: 1px solid $c-aliceBlue;
+		width:  calc(100% - 20px);
+		height: 55px;
+		line-height: 50px;
+	}
+
+
+	&__title {
+		font: {
+			size: 18px;
+		}
+	}
+
+
+	&__date {
+		font-size: 13px;
+	}
+
+
+	&__bottom-text {
+		padding-left: 100px;
+	}
+
+
+	&__text,
+	&__bottom-text,
+	&__bottom-soc {
+		font-size: 14px;
+	}
+
+
+	&__bottom-text,
+	&__date {
+		color: $c-pinkSwan;
+	}
+
+
+	&__title,
+	&__text,
+	&__bottom-soc {
+		color: $c-shuttleGrey;
+	}
+
+
+	&__bottom-soc {
+		cursor: pointer;
+
+
+		&-icon {
+			display: inline-block;
+			@include retina-sprite($sp-i-note-vk-group);
+		}
+
+
+		&:hover {
+			text-decoration: underline;
+			color: $c-viking;
+		}
+	}
+
+
+	&__active {
+		display: none;
+		position: absolute;
+		top: 4px;
+		right: 0;
+		@include retina-sprite($sp-i-note-active-group);
+	}
+}

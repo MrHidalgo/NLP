@@ -55,22 +55,11 @@ $f-V_regular  : return-value(fonts, V_regular);
 }
 
 
-.hello__page {
-	.header {
-		.logo,
-		.nav__btn-training {
-			position: relative;
-			z-index: 101;
-		}
-	}
-}
-
-
 .hello_bg {
 	position: absolute;
 	@include mixinDimensions($w-all);
 	top: 0;
-	background-color: rgba(0,0,0,0.85);
+	background-color: rgba(0,0,0,0.99);
 	z-index: 100;
 }
 

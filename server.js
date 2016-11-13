@@ -20,6 +20,10 @@ app.use('/hello',	        express.static('./dist/', {
 app.use('/profile',	        express.static('./dist/', {
         'index' : 'profile.html'
 }));
+// DIARY
+app.use('/diary',	        express.static('./dist/', {
+        'index' : 'diary.html'
+}));
 
 
 app.listen(app.get('port'),	function()	{
