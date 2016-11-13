@@ -1,0 +1,118 @@
+///
+/// IMPORT BLOCK
+///
+@import "_mixin/mixin";
+@import "_function/function";
+///
+///	SPRITE
+///
+@import "_variable/sprite_NLP";
+///
+///	TMPL
+///
+//@import "./_template/_startForm/_data";
+///
+/// DECLARATION VARIABLE
+///
+$c-white        : return-value(color, white);
+$c-whisper      : return-value(color, whisper);
+$c-viking       : return-value(color, viking);
+$c-regentStBlue : return-value(color, regentStBlue);
+
+$f-V_regular    : return-value(fonts, V_regular);
+///
+/// MAIN
+///
+.list {
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	align-items: stretch;
+
+
+	&__block {
+		position: relative;
+		width: 170px;
+		margin: 0 11px 20px;
+		text-align: center;
+		cursor: pointer;
+		transition: all .3s ease-in-out;
+		@include respond-to("large") {
+			margin-left: 16px;
+			margin-right: 16px;
+		}
+
+
+		&:hover {
+			.list__wrap-img {
+				box-shadow: 0 2px 4px 0 rgba(71, 71, 71, 0.3);
+			}
+
+			.list__name {
+				text-decoration: underline;
+			}
+		}
+	}
+
+
+	&__wrap {
+		&-img {
+			transition: all .3s ease-in-out;
+			overflow: hidden;
+
+			@include mixinDimensions(170px, 160px);
+			border: 5px solid $c-whisper;
+
+
+			.user-avatar {
+				max-width: initial;
+				max-height: 100%;
+				height: initial;
+				transform: translateX(-20%);
+			}
+		}
+
+
+		&-text {
+			transition: all .3s ease-in-out;
+			font: {
+				size: 14px;
+				family: $f-V_regular;
+			}
+			color: $c-viking;
+			margin-top: 5px;
+		}
+	}
+}
+
+
+.btn-trainer {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	background-color: $c-white;
+	text-align: center;
+	@include mixinDimensions(40px);
+	line-height: 40px;
+	border: {
+		radius: 50%;
+		width: 1px;
+		style: solid;
+		color: $c-regentStBlue;
+	}
+
+
+	&__mail {
+		vertical-align: middle;
+		display: inline-block;
+		@include retina-sprite($sp-i-mail-group);
+	}
+
+
+	&__warn {
+		position: absolute;
+		top: 2px;
+		right: 2px;
+		@include retina-sprite($sp-i-exclamation-group);
+	}
+}

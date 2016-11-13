@@ -49,6 +49,7 @@ $f-FS_bold			: return-value(fonts, FS_bold);
 
 
 @each $className, $imgName, $imgNameHover in
+		("list",	    $sp-i-list-group,     $sp-i-list-hover-group),
 		("training",	$sp-i-training-group, $sp-i-training-hover-group),
 		("community",	$sp-i-comunity-group, $sp-i-comunity-hover-group),
 		("diary",			$sp-i-diary-group,    $sp-i-diary-hover-group)

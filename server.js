@@ -24,6 +24,10 @@ app.use('/profile',	        express.static('./dist/', {
 app.use('/diary',	        express.static('./dist/', {
         'index' : 'diary.html'
 }));
+// TRAINER
+app.use('/trainer',	        express.static('./dist/', {
+        'index' : 'start_trainer.html'
+}));
 
 
 app.listen(app.get('port'),	function()	{

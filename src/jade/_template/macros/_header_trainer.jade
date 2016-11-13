@@ -1,0 +1,35 @@
+-
+    var navText = [
+        "Список участников",
+        "Сообщество"
+    ];
+
+    var navBtnClass = [
+        "list",
+        "community"
+    ];
+
+    var navHref = [
+        "javascript:void(0);",
+        "javascript:void(0);"
+    ];
+
+
+.header
+
+    .logo
+        a(href="/", class="btn-logo")
+            img(src="./img/img-logo.png", class="logo__icon", alt="logotype")
+            img(src="./img/img-logo@2x.png", class="logo__icon-retina", alt="logotype")
+
+    .nav
+        ul.nav__list
+            - for(var i = 0; i < 3; i++)
+                li.nav__item
+                    a(href=navHref[i], class="nav__btn nav__btn-" + navBtnClass[i])
+                        i.nav__icon
+                        span.nav__text!= navText[i]
+
+    .login
+        a(href="javascript:void(0);", class="login__btn-sign")!= "Войти"
+        a(href="/profile", class="login__btn-profile")!= "Профиль"

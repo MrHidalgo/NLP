@@ -1,0 +1,12 @@
+{
+  "styleLink" : [
+    "./css/common.min.css",
+    "./css/start_trainer.css"
+  ],
+
+  "scriptLink" : [
+    "./script/jquery-1.11.1.min.js",
+    "./script/main.js",
+    "./script/start_trainer.js"
+  ]
+}

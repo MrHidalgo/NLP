@@ -269,6 +269,43 @@ input {
 }
 
 
+.nav__btn-list .nav__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background-image: url(../img/sprite_NLP.png);
+  background-position: 0px -562px;
+  width: 24px;
+  height: 26px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  
+  .nav__btn-list .nav__icon {
+    background-image: url(../img/sprite_NLP@2x.png);
+    background-size: 30px 874px;
+  }
+}
+
+
+.nav__btn-list:hover .nav__icon {
+  background-image: url(../img/sprite_NLP.png);
+  background-position: 0px -531px;
+  width: 24px;
+  height: 26px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  
+  .nav__btn-list:hover .nav__icon {
+    background-image: url(../img/sprite_NLP@2x.png);
+    background-size: 30px 874px;
+  }
+}
+
+
 .nav__btn-training .nav__icon {
   display: inline-block;
   vertical-align: middle;
@@ -276,7 +313,7 @@ input {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -694px;
+  background-position: 0px -796px;
   width: 26px;
   height: 26px;
 }
@@ -285,14 +322,14 @@ input {
   
   .nav__btn-training .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 772px;
+    background-size: 30px 874px;
   }
 }
 
 
 .nav__btn-training:hover .nav__icon {
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -663px;
+  background-position: 0px -765px;
   width: 26px;
   height: 26px;
 }
@@ -301,7 +338,7 @@ input {
   
   .nav__btn-training:hover .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 772px;
+    background-size: 30px 874px;
   }
 }
 
@@ -322,7 +359,7 @@ input {
   
   .nav__btn-community .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 772px;
+    background-size: 30px 874px;
   }
 }
 
@@ -338,7 +375,7 @@ input {
   
   .nav__btn-community:hover .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 772px;
+    background-size: 30px 874px;
   }
 }
 
@@ -359,7 +396,7 @@ input {
   
   .nav__btn-diary .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 772px;
+    background-size: 30px 874px;
   }
 }
 
@@ -375,7 +412,7 @@ input {
   
   .nav__btn-diary:hover .nav__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 772px;
+    background-size: 30px 874px;
   }
 }
 
@@ -549,7 +586,7 @@ input {
   right: 0;
   margin: auto;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -760px;
+  background-position: 0px -862px;
   width: 20px;
   height: 12px;
 }
@@ -558,7 +595,7 @@ input {
   
   .social__btn-0 .social__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 772px;
+    background-size: 30px 874px;
   }
 }
 
@@ -576,7 +613,7 @@ input {
   right: 0;
   margin: auto;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -418px;
+  background-position: 0px -437px;
   width: 12px;
   height: 20px;
 }
@@ -585,7 +622,7 @@ input {
   
   .social__btn-1 .social__icon {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 772px;
+    background-size: 30px 874px;
   }
 }
 
