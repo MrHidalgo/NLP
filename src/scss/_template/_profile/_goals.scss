@@ -1,0 +1,146 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+///
+///	SPRITE
+///
+@import "../../_variable/sprite_NLP";
+///
+/// DECLARATION VARIABLE
+///
+$c-whisper      : return-value(color, whisper);
+$c-pinkSwan     : return-value(color, pinkSwan);
+$c-cinnabar     : return-value(color, cinnabar);
+$c-irisBlue     : return-value(color, irisBlue);
+$c-shuttleGrey  : return-value(color, shuttleGrey);
+
+
+///
+/// MAIN
+///
+.goals {
+	&__wrap {
+		position: relative;
+	}
+
+
+	&__btn {
+		position: absolute;
+		top: 0;
+		right: -30px;
+
+
+		&-main {
+			display: block;
+			margin-bottom: 5px;
+			border-top: 2px solid $c-whisper;
+			border-right: 2px solid $c-whisper;
+			border-bottom: 2px solid $c-whisper;
+			text-align: center;
+			@include mixinDimensions(30px);
+			line-height: 30px;
+		}
+
+
+		&-icon {
+			display: inline-block;
+			vertical-align: sub;
+		}
+
+
+		&-liked {
+			&:before {
+				content: "- В избранное";
+				color: $c-pinkSwan;
+			}
+		}
+
+
+		&-edit {
+			&:before {
+				content: "- Редактировать";
+				color: $c-irisBlue;
+			}
+		}
+
+
+		&-delete {
+			&:before {
+				content: "- Удалить цель";
+				color: $c-cinnabar;
+			}
+		}
+
+
+		&-liked,
+		&-edit,
+		&-delete {
+			&:hover {
+				&:before {
+					display: block;
+				}
+			}
+
+
+			&:before {
+				display: none;
+				position: absolute;
+				left: 40px;
+				white-space: nowrap;
+				font-size: 14px;
+			}
+		}
+
+
+		&-item {
+			&.active {
+				.goals__btn {
+					&-main {
+						background-color: $c-shuttleGrey;
+						border-color: $c-shuttleGrey;
+					}
+
+					&-liked {
+						&:before {
+							content: "- Убрать";
+							color: $c-pinkSwan;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@each $className, $imgName , $imgNameHover in
+	("liked",   $sp-i-goals-group,  $sp-i-goals-hover-group),
+	("edit",    $sp-i-edit-group,   $sp-i-edit-hover-group),
+	("delete",  $sp-i-delete-group, $sp-i-delete-hover-group)
+{
+	.goals__btn-#{$className} {
+		.goals__btn-icon {
+			@include retina-sprite($imgName);
+		}
+
+
+		&:hover {
+			.goals__btn-icon {
+				@include retina-sprite($imgNameHover);
+			}
+		}
+	}
+
+
+	.goals__btn-item {
+		&.active {
+			.goals__btn-#{$className} {
+				.goals__btn-icon {
+					@include retina-sprite($imgNameHover);
+				}
+			}
+		}
+	}
+}

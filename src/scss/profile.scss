@@ -11,6 +11,7 @@
 ///	TMPL
 ///
 @import "./_template/_startForm/_data";
+@import "./_template/_profile/_goals";
 ///
 /// DECLARATION VARIABLE
 ///
@@ -60,6 +61,11 @@ $f-V_regular  : return-value(fonts, V_regular);
 .form__message {
 	&_profile {
 		font-size: 14px;
+	}
+
+
+	&.active {
+		border-color: $c-shuttleGrey;
 	}
 }
 
