@@ -71,7 +71,7 @@
   vertical-align: middle;
   display: inline-block;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -512px;
+  background-position: 0px -560px;
   width: 21px;
   height: 19px;
 }
@@ -80,6 +80,6 @@
   
   .btn-distribution__hearth {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 898px;
+    background-size: 30px 946px;
   }
 }

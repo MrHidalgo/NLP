@@ -1,0 +1,130 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+///
+///	SPRITE
+///
+@import "../../_variable/sprite_NLP";
+///
+/// DECLARATION VARIABLE
+///
+$c-white          : return-value(color, white);
+$c-shuttleGrey    : return-value(color, shuttleGrey);
+$c-pinkSwan       : return-value(color, pinkSwan);
+$c-aliceBlue      : return-value(color, aliceBlue);
+$c-viking         : return-value(color, viking);
+
+$f-V_regular  		: return-value(fonts, V_regular);
+$f-V_bold     		: return-value(fonts, V_bold);
+///
+/// MAIN
+///
+.community {
+	&__wrap {
+		cursor: pointer;
+		position: relative;
+		padding: 30px 20px 0 0;
+		margin-bottom: 20px;
+		background-color: $c-white;
+		box-shadow: 0 2px 3px 0 rgba(71, 71, 71, 0.4);
+		font: {
+			family: $f-V_regular;
+		}
+		width: 440px;
+		min-height: 260px;
+
+
+		&-top {
+			border-bottom: 1px solid $c-aliceBlue;
+		}
+
+
+		&-top,
+		&-bottom {
+			padding: 20px 0 20px 100px;
+			@include respond-to("large") {
+				padding-left: 50px;
+			}
+		}
+
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: flex-start;
+		margin-top: 25px;
+		text-align: center;
+	}
+
+
+	&__item {
+		width: 82px;
+		margin-right: 23px;
+		margin-top: 10px;
+
+		&-name {
+			font-size: 13px;
+			color: $c-viking;
+			margin-bottom: 5px;
+			line-height: 1.4;
+			display: inline-block;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+
+	&__wrap-img {
+		@include mixinDimensions(82px);
+		overflow: hidden;
+		margin-bottom: 10px;
+	}
+
+
+	&__points {
+		color: $c-shuttleGrey;
+		font-family: $f-V_bold;
+
+		&_small {
+			font-size: 14px;
+		}
+		&_big {
+			font-size: 18px;
+		}
+	}
+
+
+	&__info {
+		position: relative;
+
+
+		&-left {
+			margin-right: 20px;
+		}
+		&-right {
+			position: absolute;
+			padding-left: 92px;
+
+			.community__title {
+				padding-bottom: 10px;
+			}
+		}
+
+		&-left,
+		&-right {
+			float: left;
+		}
+	}
+}
+
+.btn-community {
+	display: inline-block;
+	margin-right: 20px;
+}

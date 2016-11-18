@@ -32,7 +32,7 @@
   vertical-align: middle;
   display: inline-block;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -642px;
+  background-position: 0px -690px;
   width: 20px;
   height: 16px;
 }
@@ -41,7 +41,7 @@
   
   .btn-trainer__mail {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 898px;
+    background-size: 30px 946px;
   }
 }
 
@@ -51,7 +51,7 @@
   top: 2px;
   right: 2px;
   background-image: url(../img/sprite_NLP.png);
-  background-position: 0px -418px;
+  background-position: 0px -466px;
   width: 4px;
   height: 14px;
 }
@@ -60,6 +60,6 @@
   
   .btn-trainer__warn {
     background-image: url(../img/sprite_NLP@2x.png);
-    background-size: 30px 898px;
+    background-size: 30px 946px;
   }
 }

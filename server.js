@@ -32,6 +32,10 @@ app.use('/trainer',	        express.static('./dist/', {
 app.use('/distribution',	        express.static('./dist/', {
         'index' : 'award_distribution.html'
 }));
+// COMMUNITY TRAINER
+app.use('/community',	        express.static('./dist/', {
+        'index' : 'community.html'
+}));
 
 
 app.listen(app.get('port'),	function()	{

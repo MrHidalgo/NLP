@@ -1,0 +1,21 @@
+
+.chat
+    .chat__wrap
+        - for(var i = 0; i < 10; i++)
+            .chat__container.clearfix
+                .title__wrap
+                    span.chat__title!= "Дмитрий Бойко"
+                    span.chat__time!= "14:15"
+                .chat__container-left
+                    .chat__wrap-img
+                        img(src="./img/img-avatar_load.jpg", title="avatar", class="img-chat")
+
+                .chat__container-right
+                    if(i == 0)
+                        p.chat__text!= "Здесь мой отчет по выполнению задания <a href='javascript:void(0);' class='chat__link'>ссылка</a>"
+                    else
+                        p.chat__text!= "Здесь мой отчет по выполнению задания Здесь мой отчет по выполнению задания Здесь мой отчет по выполнению задания Здесь мой отчет по выполнению задания Здесь мой отчет по выполнению задания Здесь мой отчет по выполнению задания Здесь мой отчет по выполнению задания <a href='javascript:void(0);' class='chat__link'>ссылка</a>"
+
+                    .chat__like
+                        a(href="javascript:void(0);" class="icon icon-chat__like")
+                        p.chat__like-num!= "4"

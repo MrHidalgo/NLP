@@ -1,0 +1,27 @@
+.community__wrap
+    .community__wrap-top
+        p.community__title!= "Топ 3 участника"
+
+        .community__users
+            ul.community__list
+                - for(var i = 0; i < 3; i ++)
+                    li.community__item
+                        .community__wrap-img
+                            img(src="./img/img-avatar_load.jpg", title="avatar", class="img-community")
+
+                        a(href="javascript:void(0);", class="community__item-name")!= "Дмитрий Бойко"
+                        p.community__points.community__points_small!= '<span class="community__points-start">97</span>/<span class="community__points-end">100</span>'
+
+
+    .community__wrap-bottom
+        .community__info.clearfix
+            .community__info-left.community__wrap-img
+                img(src="./img/img-avatar_load.jpg", title="avatar", class="img-community")
+
+            .community__info-right
+                p.community__title!= "Дмитрий Бойко"
+                p.community__points.community__points_big!= '<span class="community__points-start">56</span>/<span class="community__points-end">100</span>'
+
+        .community__btn.clearfix
+            a(href="javascript:void(0);", class="btn btn-community btn_small-big")!= "Подарить баллы"
+            span.community__points.community__points_small!= '<span class="community__points-start">7</span>/<span class="community__points-end">10</span>'
