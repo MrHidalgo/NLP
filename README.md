@@ -1,0 +1,1 @@
+Only last browser version [test version for now - not adaptive]
