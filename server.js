@@ -1,7 +1,7 @@
 var	express	    =	require('express'),
     app         =	express();
 
-app.set('port',	(process.env.PORT	||	3333));
+app.set('port',	(process.env.PORT	||	5555));
 
 
 // MAIN PAGE
@@ -35,6 +35,10 @@ app.use('/distribution',	        express.static('./dist/', {
 // COMMUNITY TRAINER
 app.use('/community',	        express.static('./dist/', {
         'index' : 'community.html'
+}));
+// MENU TRAINING
+app.use('/menus',	        express.static('./dist/', {
+        'index' : 'menus.html'
 }));
 
 

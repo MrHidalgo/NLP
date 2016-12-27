@@ -1,0 +1,35 @@
+mixin stageBlock(count, className)
+    div(class="stage__block clearfix stage__block-" + count + " " + className)
+        span.stage__disable
+        .stage__img-wrap
+            img(src="./img/img-stage.png", class="stage__img", alt='stage', title='title')
+
+        .stage__info
+            p.stage__info-tilte!= count + ". Базовые стратегии НЛП"
+
+            p.stage__info-desc!= "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев болееменее осмысленного текста рыбы на русском языке,а начинающему оратору отточить навык публичных выступлений в домашних условиях."
+
+            hr.stage__info-line
+
+            .stage__info-bottom
+
+                a(href="javascript:void(0);", class="btn btn_small btn__stage")!= "Продолжить"
+
+                .stage__progress
+                    .stage__circle
+                        img(src="./img/img-stage-progress.png", class="stage__img-progress", alt='stage', title='title')
+                    span.stage__progress!= "Прогресс </br> выполнения"
+
+                if(className === "active")
+                    .stage__message
+                        .stage__circle
+                            i.icon.stage__mess
+                        span.stage__new!= "Новое </br> сообщение"
+
+
+.stage
+    - for(var i = 1; i <= 10; i++)
+        if(i === 1)
+            +stageBlock(i, "active")
+        else
+            +stageBlock(i, "disable")

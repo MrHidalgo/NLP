@@ -1,0 +1,23 @@
+///
+/// IMPORT BLOCK
+///
+@import "_mixin/mixin";
+@import "_function/function";
+///
+///	SPRITE
+///
+@import "_variable/sprite_NLP";
+///
+///	TMPL
+///
+@import "./_template/_menus/progress";
+@import "./_template/_menus/stage";
+///
+/// DECLARATION VARIABLE
+///
+$w-all				: return-value(dimension, all);
+
+$c-white      : return-value(color, white);
+///
+/// MAIN BLOCK
+///

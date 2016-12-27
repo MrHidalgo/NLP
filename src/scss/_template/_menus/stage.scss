@@ -1,0 +1,164 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+///
+/// DECLARATION VARIABLE
+///
+$w-all          : return-value(dimension, all);
+
+$c-white				: return-value(color, white);
+$c-shuttleGrey  : return-value(color, shuttleGrey);
+$c-aliceBlue    : return-value(color, aliceBlue);
+$c-regentStBlue : return-value(color, regentStBlue);
+$c-cinnabar     : return-value(color, cinnabar);
+///
+/// MAIN
+///
+.stage {
+
+
+	&__block {
+		cursor: pointer;
+		position: relative;
+		z-index: 3;
+		min-height: 300px;
+		border: 2px solid $c-aliceBlue;
+		margin-bottom: 30px;
+
+
+		&:hover {
+			border-color: $c-shuttleGrey;
+			box-shadow: 0 2px 4px 0 rgba(71, 71, 71, 0.3);
+			transition: all 0.3s linear;
+		}
+
+
+		&.disable {
+			pointer-events: none;
+
+
+			.stage__disable {
+				position: absolute;
+				top: 0;
+				left: 0;
+				@include mixinDimensions($w-all);
+				background-color: rgba($c-white, .8);
+				z-index: 10;
+			}
+		}
+	}
+
+
+	&__img-wrap {
+		@include mixinDimensions(270px, 301px);
+		overflow: hidden;
+	}
+
+
+	&__info {
+		position: relative;
+		width: calc(100% - 270px);
+		height: 301px;
+		padding: 30px;
+
+
+		&-tilte {
+			font-size: 22px;
+			margin-bottom: 20px;
+		}
+
+
+		&-desc {
+			font-size: 14px;
+		}
+
+
+		&-tilte,
+		&-desc {
+			color: $c-shuttleGrey;
+		}
+
+
+		&-line {
+			background-color: $c-aliceBlue;
+			width: calc(100% - 60px);
+			height: 2px;
+			border: none;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			position: absolute;
+			left: 30px;
+			bottom: 90px;
+		}
+
+
+		&-bottom {
+			position: absolute;
+			width: calc(100% - 60px);
+			bottom: 30px;
+			left: 30px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+
+
+	&__img-wrap,
+	&__info {
+		float: left;
+	}
+
+
+	&__progress {
+		color: $c-regentStBlue;
+	}
+
+
+	&__new {
+		color: $c-cinnabar;
+	}
+
+
+	&__progress,
+	&__message {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+
+	&__progress,
+	&__new {
+		font-size: 14px;
+	}
+
+
+	&__circle {
+		position: relative;
+		margin-right: 10px;
+		@include mixinDimensions(40px);
+		border-radius: $w-all;
+		border: 1px solid $c-aliceBlue;
+	}
+
+
+	&__img-progress {
+		position: absolute;
+		right: -5px;
+		top: -3px;
+	}
+
+
+	&__mess {
+		position: absolute;
+		right: 0;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		margin: auto;
+		@include retina-sprite($sp-i-mail-group);
+	}
+}

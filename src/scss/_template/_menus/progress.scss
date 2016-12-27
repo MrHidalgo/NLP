@@ -1,0 +1,63 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+///
+/// DECLARATION VARIABLE
+///
+$w-all          : return-value(dimension, all);
+
+$c-white				: return-value(color, white);
+$c-shuttleGrey  : return-value(color, shuttleGrey);
+$c-aliceBlue    : return-value(color, aliceBlue);
+
+$f-FS_book      : return-value(fonts, FS_book);
+$f-FS_bold      : return-value(fonts, FS_bold);
+///
+/// MAIN
+///
+.progress {
+	font: {
+		family: $f-FS_book;
+	}
+	margin-bottom: 40px;
+
+
+	&__title {
+		font-size: 14px;
+		color: $c-shuttleGrey;
+		margin-bottom: 10px;
+
+
+		&-num {
+			font : {
+				size: 22px;
+				family: $f-FS_bold;
+			}
+		}
+	}
+
+
+	&__line {
+		@include mixinDimensions($w-all, 40px);
+		border: 2px solid $c-aliceBlue;
+		position: relative;
+		overflow: hidden;
+	}
+
+
+	&__indicators {
+		position: absolute;
+		top: 0;
+		left: -20px;
+		@include mixinDimensions(35%, $w-all);
+		box-shadow: 0 2px 4px 0 rgba(71, 71, 71, 0.3);
+		transform: skew(-45deg);
+		background: rgb(116,204,82);
+		background: -moz-linear-gradient(left,  rgba(116,204,82,1) 0%, rgba(192,218,56,1) 100%);
+		background: -webkit-linear-gradient(left,  rgba(116,204,82,1) 0%,rgba(192,218,56,1) 100%);
+		background: linear-gradient(to right,  rgba(116,204,82,1) 0%,rgba(192,218,56,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74cc52', endColorstr='#c0da38',GradientType=1 );
+	}
+}
