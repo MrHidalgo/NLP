@@ -40,6 +40,10 @@ app.use('/community',	        express.static('./dist/', {
 app.use('/menus',	        express.static('./dist/', {
         'index' : 'menus.html'
 }));
+// MENU LESSONS
+app.use('/lessons',	        express.static('./dist/', {
+        'index' : 'lessons.html'
+}));
 
 
 app.listen(app.get('port'),	function()	{

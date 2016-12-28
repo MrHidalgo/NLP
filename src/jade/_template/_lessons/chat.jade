@@ -1,0 +1,43 @@
+mixin chatLeft(className)
+    div(class="chat__container clearfix " + className)
+        .title__wrap
+            span.chat__title!= "Дмитрий Бойко"
+            span.chat__time!= "14:15"
+        .chat__container-left
+            .chat__wrap-img
+                img(src="./img/img-avatar_load.jpg", title="avatar", class="img-chat")
+
+        .chat__container-right
+            p.chat__text!= "Здесь мой отчет по выполнению задания <a href='javascript:void(0);' class='chat__link'>ссылка</a>"
+
+mixin chatRight(className)
+    div(class="chat__container clearfix " + className)
+        .title__wrap
+            span.chat__time!= "14:15"
+            span.chat__title!= "Дмитрий Бойко"
+
+        .chat__container-left
+            .chat__wrap-img
+                img(src="./img/img-avatar_load.jpg", title="avatar", class="img-chat")
+
+        .chat__container-right
+            p.chat__text!= "Здесь мой отчет по выполнению задания Здесь мой отчет по выполнению задания Здесь мой отчет по выполнению задания Здесь мой отчет по выполнению задания Здесь мой отчет по выполнению задания Здесь мой отчет по выполнению задания Здесь мой отчет по выполнению задания <a href='javascript:void(0);' class='chat__link'>ссылка</a>"
+
+
+
+.chat
+    h3.main__sub-title!= "Чат с тренером"
+
+    .chat__wrap
+        .chat__row
+            - for(var i = 0; i < 2; i++)
+                +chatLeft("chat__container_left")
+                +chatRight("chat__container_right")
+                +chatLeft("chat__container_left")
+                +chatRight("chat__container_right")
+
+        textarea(class="form__message form__message_chat", name="form__message")
+            | Ваш комментарий
+
+        button(type="submit", id="btn-submit" class="btn btn-send btn_small")!= "Отправить"
+

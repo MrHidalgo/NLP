@@ -1,0 +1,147 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+///
+/// DECLARATION VARIABLE
+///
+$c-white          : return-value(color, white);
+$c-shuttleGrey    : return-value(color, shuttleGrey);
+$c-pinkSwan       : return-value(color, pinkSwan);
+$c-aliceBlue      : return-value(color, aliceBlue);
+$c-viking         : return-value(color, viking);
+
+$f-V_regular  		: return-value(fonts, V_regular);
+$f-V_bold     		: return-value(fonts, V_bold);
+///
+/// MAIN
+///
+.chat {
+
+
+	&__wrap {
+		background-color: rgb(243, 245, 247);
+		box-shadow: 0 2px 3px 0 rgba(71, 71, 71, 0.4);
+		width: 100%;
+		padding: 40px 20px;
+		font-family: $f-V_regular;
+	}
+
+
+	&__row {
+		height: 300px;
+		padding: 20px;
+		overflow-x: auto;
+		margin-bottom: 40px;
+		box-shadow: 0 2px 5px 0 rgba(71, 71, 71, 0.25);
+	}
+
+
+	&__container {
+		position: relative;
+		margin-bottom: 20px;
+
+
+		&-left {
+			float: left;
+			margin-right: 10px;
+		}
+
+
+		&-right {
+			position: relative;
+			display: inline-block;
+			width: calc(100% - 92px);
+			min-height: 82px;
+			background: $c-white;
+			padding: 10px 51px 10px 15px;
+			font-size: 14px;
+
+
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 10px;
+				width: 10px;
+				border: {
+					width: 10px;
+					style: solid;
+					color: transparent transparent transparent rgb(243, 245, 247);
+				}
+			}
+		}
+
+
+		&_left {}
+
+
+		&_right {
+			.title__wrap {
+				text-align: right;
+			}
+			.chat__title {
+				margin-right: 0;
+				margin-left: 10px;
+			}
+			.chat__container-left {
+				float: right;
+				margin-right: 0;
+				margin-left: 10px;
+			}
+			.chat__container-right {
+				padding-left: 51px;
+				padding-right: 15px;
+				text-align: right;
+
+				&:before {
+					content: "";
+					left: auto;
+					right: 0;
+					border: {
+						color: transparent rgb(243, 245, 247) transparent transparent;
+					}
+				}
+			}
+		}
+	}
+
+
+	&__link {
+		color: $c-viking;
+		text-decoration: underline;
+	}
+
+	&__wrap-img {
+		@include mixinDimensions(82px);
+		overflow: hidden;
+	}
+
+	&__title {
+		color: $c-viking;
+		margin-right: 10px;
+	}
+
+	&__time {
+		color: $c-pinkSwan;
+	}
+
+	&__title,
+	&__time {
+		font-size: 14px;
+	}
+}
+
+
+.img-chat {
+	max-width: initial;
+	max-height: 100%;
+	height: initial;
+	transform: translateX(-20%);
+}
+
+
+.form__message_chat {
+	font-size: 14px;
+}

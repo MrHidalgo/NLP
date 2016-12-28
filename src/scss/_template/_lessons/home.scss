@@ -1,0 +1,73 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+///
+///	SPRITE
+///
+@import "../../_variable/sprite_NLP";
+///
+/// DECLARATION VARIABLE
+///
+$w-all          : return-value(dimension, all);
+
+$c-white				: return-value(color, white);
+$c-shuttleGrey  : return-value(color, shuttleGrey);
+$c-aliceBlue    : return-value(color, aliceBlue);
+
+$f-V_bold       : return-value(fonts, V_bold);
+$f-V_regular    : return-value(fonts, V_regular);
+$f-FS_light     : return-value(fonts, FS_light);
+///
+/// MAIN
+///
+.home {
+	margin-bottom: 40px;
+
+
+	&__row {
+		margin-bottom: 20px;
+
+
+		&_active {
+			.home__title {
+				&:after {
+					content: "";
+					display: inline-block;
+					margin-left: 10px;
+					@include retina-sprite($sp-i-note-active-group);
+					vertical-align: middle;
+				}
+			}
+
+
+			.home__desc {
+				text-decoration: line-through;
+			}
+		}
+	}
+
+
+	&__title {
+		font: {
+			family: $f-V_bold;
+		}
+		margin-bottom: 20px;
+	}
+
+
+	&__desc {
+		font: {
+			family: $f-V_regular;
+		}
+		padding-left: 60px;
+		color: $c-shuttleGrey;
+	}
+
+
+	&__title,
+	&__desc {
+		font-size: 14px;
+	}
+}

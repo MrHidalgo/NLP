@@ -1,0 +1,24 @@
+
+mixin noteField()
+    .note__wrap
+        textarea(class="form__message form__message_lessons", name="form__message")
+            | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+        .note__btn
+            ul.note__btn-list
+                li.note__btn-item
+                    a(href="javascript:void(0);", class="note__btn-main note__btn-edit")
+                        i.icon.note__btn-icon
+
+                li.note__btn-item
+                    a(href="javascript:void(0);", class="note__btn-main note__btn-delete")
+                        i.icon.note__btn-icon
+
+
+.note
+    h3.main__sub-title!= "Для заметок"
+
+    - for(var i = 0; i < 2; i++)
+        +noteField()
+
+    button(type="submit", id="btn-submit" class="btn btn-save btn_big")!= "Сохранить"
