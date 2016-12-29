@@ -44,6 +44,10 @@ app.use('/menus',	        express.static('./dist/', {
 app.use('/lessons',	        express.static('./dist/', {
         'index' : 'lessons.html'
 }));
+// TRAIN PROFILE
+app.use('/train',	        express.static('./dist/', {
+        'index' : 'profile_train.html'
+}));
 
 
 app.listen(app.get('port'),	function()	{

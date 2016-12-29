@@ -1,19 +1,20 @@
 
 .goals
-    .goals__wrap
-        textarea(class="form__message form__message_profile", name="form__message")
-            | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    -for(var i = 0; i < 3; i++)
+        .goals__wrap
+            textarea(class="form__message form__message_profile", name="form__message")
+                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
-        .goals__btn
-            ul.goals__btn-list
-                li.goals__btn-item
-                    a(href="javascript:void(0);", class="goals__btn-main goals__btn-liked")
-                        i.icon.goals__btn-icon
+            .goals__btn
+                ul.goals__btn-list
+                    li.goals__btn-item
+                        a(href="javascript:void(0);", class="goals__btn-main goals__btn-liked")
+                            i.icon.goals__btn-icon
 
-                li.goals__btn-item
-                    a(href="javascript:void(0);", class="goals__btn-main goals__btn-edit")
-                        i.icon.goals__btn-icon
+                    li.goals__btn-item
+                        a(href="javascript:void(0);", class="goals__btn-main goals__btn-edit")
+                            i.icon.goals__btn-icon
 
-                li.goals__btn-item
-                    a(href="javascript:void(0);", class="goals__btn-main goals__btn-delete")
-                        i.icon.goals__btn-icon
+                    li.goals__btn-item
+                        a(href="javascript:void(0);", class="goals__btn-main goals__btn-delete")
+                            i.icon.goals__btn-icon

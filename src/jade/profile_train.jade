@@ -1,0 +1,52 @@
+include _mixin/mixin
+
+
+doctype html
+html
+
+
+    +headSite('Профиль участника для тренера', profile_train.styleLink, data.fontLink)
+
+
+    body
+
+        .container
+
+
+            //- HEADER [logotype, navigation, {signIn, profile - btn} ]
+            block header
+                include _template/macros/_header_trainer
+
+
+            .main.profile_train
+                .main__wrap
+
+                    h1.main__title!= "Личный профиль"
+
+
+                    form(action="", class="clearfix")
+
+                        include ./_template/_profile/_data
+
+
+                    h2.main__sub-title!= "Ваши цели"
+
+
+                    include ./_template/_profile/_goals
+
+
+                    block tabs
+                        include ./_template/_profile-train/_tabs
+
+
+                    block chats
+                        include ./_template/_lessons/chat
+
+
+            //- FOOTER
+            block footer
+                include _template/macros/_footer
+
+
+        - for(var i = 0; i < profile_train.scriptLink.length; i++)
+            script(src= profile_train.scriptLink[i])

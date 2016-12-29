@@ -392,3 +392,8 @@
 .form__message_chat {
   font-size: 14px;
 }
+
+
+.profile_train .chat .main__sub-title {
+  display: none;
+}

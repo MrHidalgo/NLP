@@ -1,0 +1,12 @@
+{
+  "styleLink" : [
+    "./css/common.min.css",
+    "./css/profile_train.css"
+  ],
+
+  "scriptLink" : [
+    "./script/jquery-1.11.1.min.js",
+    "./script/main.js",
+    "./script/profile_train.js"
+  ]
+}
